@@ -17,7 +17,7 @@ var form = new formidable.IncomingForm();
 });
 
 app.get('/*', function(req, res) {
-res.sendFile('/'+db.get("name"))
+res.sendFile('/'+db.get("name"));
 })
 
 app.listen(process.env.PORT);
