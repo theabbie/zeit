@@ -5,10 +5,11 @@ var faker = require('faker')
 app.get("/*", function(req,res) {
 var extra = `
 <img src="${faker.image.avatar()}" alt="Norway" style="width:100%">
-<h4 class="w3-container w3-padding-32">${faker.lorem.paragraph()}</h4>
-<h4 class="w3-container w3-padding-32">${faker.lorem.paragraph()}</h4>
-<h4 class="w3-container w3-padding-32">${faker.lorem.paragraph()}</h4>
-<h4 class="w3-container w3-padding-32">${faker.lorem.paragraph()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 `
 var result = `
 <!DOCTYPE html>
@@ -20,6 +21,7 @@ var result = `
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+div, img {border-radius: 6px;}
 </style>
 <body class="w3-light-grey">
 
@@ -47,8 +49,7 @@ ${req.url=="/"?"":extra}
     </div>
 
     <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -69,8 +70,7 @@ ${req.url=="/"?"":extra}
     </div>
 
     <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -80,6 +80,63 @@ ${req.url=="/"?"":extra}
       </div>
     </div>
   </div>
+  <hr>
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="${faker.image.avatar()}" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>${faker.hacker.phrase()}</b></h3>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2014</span></h5>
+    </div>
+    <div class="w3-container">
+      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="${faker.image.avatar()}" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>${faker.hacker.phrase()}</b></h3>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2014</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="${faker.image.avatar()}" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>${faker.hacker.phrase()}</b></h3>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2014</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
 <!-- END BLOG ENTRIES -->
 </div>
 
@@ -90,7 +147,7 @@ ${req.url=="/"?"":extra}
   <img src="${faker.image.avatar()}" style="width:100%">
     <div class="w3-container w3-white">
       <h4><b>${faker.hacker.phrase()}</b></h4>
-      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
     </div>
   </div><hr>
   
@@ -148,6 +205,7 @@ ${req.url=="/"?"":extra}
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
   <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="location.reload()">Next &raquo;</button>
+  <p class="w3-text-white w3-large">PAIGE</p>
 </footer>
 </body>
 <script>
@@ -155,6 +213,9 @@ document.querySelectorAll(".w3-tag").forEach(function(x) {
 x.addEventListener("click",function() {location.reload()})
 })
 document.querySelectorAll("h3").forEach(function(x) {
+x.addEventListener("click",function() {location.assign(x.innerText)})
+})
+document.querySelectorAll("li span").forEach(function(x) {
 x.addEventListener("click",function() {location.assign(x.innerText)})
 })
 </script>
