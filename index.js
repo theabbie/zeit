@@ -7,3 +7,4 @@ res.send(img)
 })
 })
 
+app.listen(process.env.PORT)
