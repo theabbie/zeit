@@ -149,7 +149,7 @@ ${req.url=="/"?"":extra}
   <div class="w3-card w3-margin w3-margin-top">
   <img src="${faker.image.avatar()}" style="width:100%">
     <div class="w3-container w3-white">
-      <h4><b>${faker.hacker.phrase()}</b></h4>
+      <h4><b>${faker.name.firstName()}</b></h4>
       <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
     </div>
   </div><hr>
