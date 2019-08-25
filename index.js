@@ -11,7 +11,7 @@ var form = new formidable.IncomingForm();
     db.set("name",files.file.name)
       fs.rename(files.file.path, "/tmp/"+files.file.name, function (err) {
         if (err) throw err;
-        res.redirect(301,"https://filed.now.sh/hmm");
+        res.redirect(301,"https://filed.now.sh/"+Math.floor(Math.random()*100));
       });
  });
 });
