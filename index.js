@@ -1,7 +1,10 @@
-var io = require('socket.io').listen(process.env.PORT);
- 
-io.sockets.on('connection', function (socket) {
-  socket.on('message', function (message) {
-    socket.emit('message', message);
-  });  
+var app = require('express')();
+var http = require('http').createServer(app);
+
+app.get('/', function(req, res){
+  res.send('<h1>Hello world</h1>');
+});
+
+http.listen(3000, function(){
+  console.log('listening on *:3000');
 });
