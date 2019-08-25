@@ -3,10 +3,17 @@ var axios = require('axios');
 var faker = require('faker')
 
 app.get("/*", function(req,res) {
+var extra = `
+<img src="${faker.image.avatar()}" alt="Norway" style="width:100%">
+<h4 class="w3-container w3-padding-32">${faker.lorem.paragraph()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.lorem.paragraph()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.lorem.paragraph()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.lorem.paragraph()}</h4>
+`
 var result = `
 <!DOCTYPE html>
 <html>
-<title>${faker.hacker.phrase()}</title>
+<title>${req.url=="/"?"PAIGE":decodeURIComponent(req.url.substring(1))}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -22,10 +29,10 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>${faker.hacker.phrase()}</b></h1>
+  <h1><b>${req.url=="/"?"PAIGE":decodeURIComponent(req.url.substring(1))}</b></h1>
   <p>Welcome to the blog of <span class="w3-tag">${faker.name.firstName()}</span></p>
 </header>
-
+${req.url=="/"?"":extra}
 <!-- Grid -->
 <div class="w3-row">
 
@@ -44,7 +51,6 @@ and is wrapped around the whole page content, except for the footer in this exam
         tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-tag">0</span></span></p>
@@ -67,7 +73,6 @@ and is wrapped around the whole page content, except for the footer in this exam
         tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-badge">2</span></span></p>
@@ -97,23 +102,23 @@ and is wrapped around the whole page content, except for the footer in this exam
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Lorem</span><br>
-        <span>Sed mattis nunc</span>
+        <span class="w3-large">${faker.random.words()}</span><br>
+        <span>${faker.random.words()}</span>
       </li>
       <li class="w3-padding-16">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Ipsum</span><br>
-        <span>Praes tinci sed</span>
+        <span class="w3-large">${faker.random.words()}</span><br>
+        <span>${faker.random.words()}</span>
       </li> 
       <li class="w3-padding-16">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Dorum</span><br>
-        <span>Ultricies congue</span>
+        <span class="w3-large">${faker.random.words()}</span><br>
+        <span>${faker.random.words()}</span>
       </li>   
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Mingsum</span><br>
-        <span>Lorem ipsum dipsum</span>
+        <span class="w3-large">${faker.random.words()}</span><br>
+        <span>${faker.random.words()}</span>
       </li>  
     </ul>
   </div>
@@ -125,11 +130,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       <h4>Tags</h4>
     </div>
     <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    <p><span class="w3-tag w3-black w3-margin-bottom">Java</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Python</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">C++</span>
     </p>
     </div>
   </div>
