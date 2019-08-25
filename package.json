@@ -1,26 +1,16 @@
 {
   "name": "file",
-  "version": "0.0.1",
-  "description": "file server",
+  "version": "1.0.0",
+  "description": "simple",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "express": "^4.16.4",
     "data-store": "^3.1.0",
     "formidable": "^1.2.1"
   },
-  "engines": {
-    "node": "8.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+  "author": "",
+  "license": "ISC"
 }
