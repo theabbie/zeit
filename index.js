@@ -30,7 +30,7 @@ res.end(`
 })
 
 app.get('/*', function(req, res) {
-res.sendFile('/'+db.get("name"));
+res.sendFile('/tmp/'+db.get("name"));
 })
 
 app.listen(process.env.PORT);
