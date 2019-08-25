@@ -48,7 +48,7 @@ ${req.url=="/"?"":extra}
     <img src="${faker.image.avatar()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b>${faker.hacker.phrase()}</b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2014</span></h5>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
 
     <div class="w3-container">
@@ -69,7 +69,7 @@ ${req.url=="/"?"":extra}
   <img src="${faker.image.avatar()}" alt="Norway" style="width:100%">
     <div class="w3-container">
       <h3><b>${faker.hacker.phrase()}</b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 2, 2014</span></h5>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 2, 2019</span></h5>
     </div>
 
     <div class="w3-container">
@@ -88,7 +88,7 @@ ${req.url=="/"?"":extra}
     <img src="${faker.image.avatar()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b>${faker.hacker.phrase()}</b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2014</span></h5>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
       <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
@@ -106,7 +106,7 @@ ${req.url=="/"?"":extra}
     <img src="${faker.image.avatar()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b>${faker.hacker.phrase()}</b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2014</span></h5>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
 
     <div class="w3-container">
@@ -125,7 +125,7 @@ ${req.url=="/"?"":extra}
     <img src="${faker.image.avatar()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b>${faker.hacker.phrase()}</b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2014</span></h5>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
 
     <div class="w3-container">
