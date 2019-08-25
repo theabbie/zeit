@@ -17,6 +17,14 @@ var extra = `
 var result = `
 <!DOCTYPE html>
 <html>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2455012527087318",
+          enable_page_level_ads: true
+     });
+</script>
 <title>${req.url=="/"?"PAIGE":decodeURIComponent(req.url.substring(1))}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,6 +34,7 @@ var result = `
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 div, img {border-radius: 6px;}
 </style>
+</head>
 <body class="w3-light-grey">
 
 <!-- w3-content defines a container for fixed size centered content, 
