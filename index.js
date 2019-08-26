@@ -236,7 +236,7 @@ ${req.url=="/"?"":extra}
 <!-- AD -->
 
 <div class="w3-card w3-margin">
-<h3 class="w3-padding-32">AD</h3>
+<center><h3>AD</h3></center>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- paige -->
 <ins class="adsbygoogle"
