@@ -24,6 +24,7 @@ res.end(result);
 
 app.get("/*", function(req,res) {
 var phrase = [faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase()];
+var words = [faker.random.words(),faker.random.words(),faker.random.words(),faker.random.words()];
 var extra = `
 <img src="https://source.unsplash.com/1600x900/?hacker" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
@@ -194,24 +195,32 @@ ${req.url=="/"?"":extra}
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
+        <a href="https://paige.now.sh/${words[0]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${faker.random.words()}</span><br>
-        <span>${faker.random.words()}</span>
+        <span class="w3-large">${words[0]}</span><br>
+        <span>${faker.name.firstName()}</span>
+        </a>
       </li>
       <li class="w3-padding-16">
+       <a href="https://paige.now.sh/${words[1]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${faker.random.words()}</span><br>
-        <span>${faker.random.words()}</span>
+        <span class="w3-large">${words[1]}</span><br>
+        <span>${faker.name.firstName()}</span>
+        </a>
       </li> 
       <li class="w3-padding-16">
+      <a href="https://paige.now.sh/${words[2]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${faker.random.words()}</span><br>
-        <span>${faker.random.words()}</span>
+        <span class="w3-large">${words[2]}</span><br>
+        <span>${faker.name.firstName()}</span>
+        </a>
       </li>   
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+      <a href="https://paige.now.sh/${words[3]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${faker.random.words()}</span><br>
-        <span>${faker.random.words()}</span>
+        <span class="w3-large">${words[3]}</span><br>
+        <span>${faker.name.firstName()}</span>
+        </a>
       </li>  
     </ul>
   </div>
@@ -239,16 +248,13 @@ ${req.url=="/"?"":extra}
 
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="location.reload()">Next &raquo;</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="https://paige.now.sh/">Next &raquo;</a></button>
   <p class="w3-text-white w3-large">PAIGE</p>
 </footer>
 </body>
 <script>
 document.querySelectorAll(".w3-tag").forEach(function(x) {
 x.addEventListener("click",function() {location.reload()})
-})
-document.querySelectorAll("li span").forEach(function(x) {
-x.addEventListener("click",function() {location.assign(x.innerText)})
 })
 </script>
 </html>
