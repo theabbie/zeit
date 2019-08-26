@@ -4,7 +4,7 @@ var faker = require('faker');
 var store = require('data-store');
 var db = new store({path: '/tmp/data.json'});
 
-app.get("/sitemap", function(req,res) => {
+app.get("/sitemap", function(req,res) {
 var result = `
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
