@@ -27,13 +27,13 @@ var phrase = [faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),
 var words = [faker.random.words(),faker.random.words(),faker.random.words(),faker.random.words()];
 var extra = `
 <img src="https://source.unsplash.com/1600x900/?hacker" alt="Norway" style="width:100%">
-<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
-<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 <img src="https://source.unsplash.com/1600x900/?coding" alt="Norway" style="width:100%">
-<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
-<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 <img src="https://source.unsplash.com/1600x900/?network" alt="Norway" style="width:100%">
-<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 <h3 class="w3-container w3-padding-32">Also see:</h3>
 `
 var result = `
