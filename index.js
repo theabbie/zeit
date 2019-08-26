@@ -181,10 +181,13 @@ ${req.url=="/"?"":extra}
 <div class="w3-col l4">
   <!-- About Card -->
   <div class="w3-card w3-margin w3-margin-top">
-  <img src="${faker.image.avatar()}" style="width:100%">
+  <img src="https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg" style="width:100%">
     <div class="w3-container w3-white">
-      <h4><b>${faker.name.firstName()}</b></h4>
-      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <h4><b>Abhishek</b></h4>
+      <p>Being a developer sometimes feels so amazing because we are instructing non-living machines to do wonderful tasks, 
+      it is more than an art and few picasso's exist
+      <b><a href="https://github.com/theabbie">https://github.com/theabbie</a></b>
+      </p>
     </div>
   </div><hr>
   
