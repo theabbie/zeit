@@ -23,7 +23,7 @@ res.end(result);
 })
 
 app.get("/*", function(req,res) {
-var phrase = [faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase()];
+var phrase = [faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase()];
 var words = [faker.random.words(),faker.random.words(),faker.random.words(),faker.random.words()];
 var extra = `
 <img src="https://source.unsplash.com/1600x900/?hacker" alt="Norway" style="width:100%">
@@ -155,6 +155,96 @@ ${req.url=="/"?"":extra}
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
 
+    <div class="w3-container">
+      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+<div class="w3-card-4 w3-margin w3-white">
+    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[5]}</a></b></h3>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+    </div>
+    <div class="w3-container">
+      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+<div class="w3-card-4 w3-margin w3-white">
+    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[6]}</a></b></h3>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+    </div>
+    <div class="w3-container">
+      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+<div class="w3-card-4 w3-margin w3-white">
+    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[7]}</a></b></h3>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+    </div>
+    <div class="w3-container">
+      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+<div class="w3-card-4 w3-margin w3-white">
+    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[8]}</a></b></h3>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+    </div>
+    <div class="w3-container">
+      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+<div class="w3-card-4 w3-margin w3-white">
+    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[9]}</a></b></h3>
+      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+    </div>
     <div class="w3-container">
       <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
       <div class="w3-row">
