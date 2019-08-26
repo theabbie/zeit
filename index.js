@@ -69,7 +69,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
   <h1><b>${req.url=="/"?"PAIGE":decodeURIComponent(req.url.substring(1))}</b></h1>
-  <p>Welcome to the blog of <span class="w3-tag">${faker.name.firstName()}</span></p>
+  <p>Welcome to the blog of <span class="w3-tag">Abhishek</span></p>
 </header>
 ${req.url=="/"?"":extra}
 <div class="w3-row">
@@ -236,6 +236,7 @@ ${req.url=="/"?"":extra}
 <!-- AD -->
 
 <div class="w3-card w3-margin">
+<h3 class="w3-padding-32">AD</h3>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- paige -->
 <ins class="adsbygoogle"
