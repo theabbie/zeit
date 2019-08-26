@@ -1,6 +1,8 @@
 var app = require('express')();
 var axios = require('axios');
-var faker = require('faker')
+var faker = require('faker');
+var store = require('data-store');
+var db = new store({path: '/tmp/data.json'});
 
 app.get("/sitemap", function(req,res) {
 var result = `
@@ -252,8 +254,9 @@ x.addEventListener("click",function() {location.assign(x.innerText)})
 </script>
 </html>
 `;
+db.set(decodeURIComponent(req.url.substring(1)),result)
 res.setHeader("content-type","text/html")
-res.end(result);
+res.end(db.has(decodeURIComponent(req.url.substring(1)))?:result:db.get(decodeURIComponent(req.url.substring(1))));
 })
 
 app.listen(process.env.PORT)
