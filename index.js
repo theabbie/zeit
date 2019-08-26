@@ -93,7 +93,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-  <img src="https://source.unsplash.com/1600x900/?${faker.random.words}" alt="Norway" style="width:100%">
+  <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Norway" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[1]}">${phrase[1]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 2, 2019</span></h5>
@@ -112,7 +112,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[2]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -130,7 +130,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[3]}">${phrase[3]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -149,7 +149,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[4]}">${phrase[4]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
