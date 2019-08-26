@@ -232,6 +232,22 @@ ${req.url=="/"?"":extra}
     </p>
     </div>
   </div>
+
+<!-- AD -->
+
+<div class="w3-card w3-margin">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- paige -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2455012527087318"
+     data-ad-slot="7646336409"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
   
 <!-- END Introduction Menu -->
 </div>
