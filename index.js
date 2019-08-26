@@ -2,6 +2,24 @@ var app = require('express')();
 var axios = require('axios');
 var faker = require('faker')
 
+app.get("/sitemap", function(req,res) {
+var result = `
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+`;
+for (i=0; i<100; i++) {result+=`
+   <url>
+      <loc>http://www.paige.now.sh/${faker.hacker.phrase()}</loc>
+      <lastmod>2019-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1</priority>
+   </url>
+`}
+result+=`</urlset>`
+res.setHeader("content-type","text/html");
+res.end(result);
+})
+
 app.get("/*", function(req,res) {
 var extra = `
 <img src="${faker.image.avatar()}" alt="Norway" style="width:100%">
