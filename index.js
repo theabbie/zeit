@@ -44,6 +44,7 @@ var result = `
      });
 </script>
 <meta name="google-site-verification" content="esWdvsZT7Pj4JUmY9NRbjNri9UawGrXbDGBcDgcK3Uo" />
+<meta name="description" content="${req.url=="/"?"PAIGE official":decodeURIComponent(req.url.substring(1))}">
 <title>${req.url=="/"?"PAIGE":decodeURIComponent(req.url.substring(1))}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
