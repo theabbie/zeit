@@ -16,7 +16,7 @@ for (i=0; i<100; i++) {result+=`
    </url>
 `}
 result+=`</urlset>`
-res.setHeader("content-type","text/html");
+res.setHeader("content-type","text/xml");
 res.end(result);
 })
 
