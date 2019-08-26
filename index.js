@@ -75,7 +75,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-row">
 <div class="w3-col l8 s12">
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[0]}">${phrase[0]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
