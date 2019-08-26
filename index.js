@@ -4,7 +4,7 @@ var faker = require('faker');
 var store = require('data-store');
 var db = new store({path: '/tmp/data.json'});
 
-app.get("/sitemap", async (req,res) => {
+app.get("/sitemap", function(req,res) => {
 var result = `
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -25,7 +25,6 @@ res.end(result);
 app.get("/*", function(req,res) {
 var phrase = [faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase()];
 var words = [faker.random.words(),faker.random.words(),faker.random.words(),faker.random.words()];
-var imgs = await axios.get("https://typi.tk/?url=https://www.google.com/images?q=You%20can%27t%20bypass%20the%20monitor%20without%20calculating%20the%20solid%20state%20THX%20transmitter!&sel=img&attribs=src&static=true");
 var extra = `
 <img src="https://source.unsplash.com/1600x900/?hacker" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
@@ -80,7 +79,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="${imgs[0]}" alt="Nature" style="width:100%">
+    <img src="${faker.image.avatar()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[0]}">${phrase[0]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
