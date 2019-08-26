@@ -256,7 +256,7 @@ x.addEventListener("click",function() {location.assign(x.innerText)})
 `;
 db.set(decodeURIComponent(req.url.substring(1)),result)
 res.setHeader("content-type","text/html")
-res.end(db.has(decodeURIComponent(req.url.substring(1)))?:result:db.get(decodeURIComponent(req.url.substring(1))));
+res.end(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):result);
 })
 
 app.listen(process.env.PORT)
