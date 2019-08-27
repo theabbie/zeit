@@ -80,7 +80,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>${req.url=="/"?"PAIGE":decodeURIComponent(req.url.substring(1))}</b></h1>
+  <h1><b>${req.url=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</b></h1>
   <p>Welcome to the blog of <span class="w3-tag">Abhishek</span></p>
 </header>
 ${req.url=="/"?"":extra}
@@ -364,7 +364,7 @@ ${req.url=="/"?"":extra}
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="https://${req.headers.host}/">Next &raquo;</a></button>
-  <p class="w3-text-white w3-large">req.headers.host.split(".")[0].toUpperCase()</p>
+  <p class="w3-text-white w3-large">${req.headers.host.split(".")[0].toUpperCase()}</p>
 </footer>
 </body>
 <script>
