@@ -61,7 +61,7 @@ var result = `
 <meta name="google-site-verification" content="esWdvsZT7Pj4JUmY9NRbjNri9UawGrXbDGBcDgcK3Uo" />
 <meta name="description" content="${req.url=="/"?"PAIGE official":decodeURIComponent(req.url.substring(1))}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<title>${req.url=="/"?"PAIGE":decodeURIComponent(req.url.substring(1))}</title>
+<title>${req.url=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -364,7 +364,7 @@ ${req.url=="/"?"":extra}
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="https://${req.headers.host}/">Next &raquo;</a></button>
-  <p class="w3-text-white w3-large">PAIGE</p>
+  <p class="w3-text-white w3-large">req.headers.host.split(".")[0].toUpperCase()</p>
 </footer>
 </body>
 <script>
