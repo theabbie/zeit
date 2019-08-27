@@ -26,10 +26,10 @@ app.get("/*", function(req,res) {
 var phrase = [faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase()];
 var words = [faker.random.words(),faker.random.words(),faker.random.words(),faker.random.words()];
 var extra = `
-<img src="https://source.unsplash.com/1600x900/?hacker" alt="Norway" style="width:100%">
+<img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
-<img src="https://source.unsplash.com/1600x900/?coding" alt="Norway" style="width:100%">
+<img src="https://source.unsplash.com/800x450/?coding" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 <b>Advertisement</b><br>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -43,7 +43,7 @@ var extra = `
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
-<img src="https://source.unsplash.com/1600x900/?network" alt="Norway" style="width:100%">
+<img src="https://source.unsplash.com/800x450/?network" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 <h3 class="w3-container w3-padding-32">Also see:</h3>
 `
@@ -87,7 +87,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-row">
 <div class="w3-col l8 s12">
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[0]}">${phrase[0]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -105,7 +105,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-  <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Norway" style="width:100%">
+  <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Norway" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[1]}">${phrase[1]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 2, 2019</span></h5>
@@ -124,7 +124,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[2]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -142,7 +142,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[3]}">${phrase[3]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -161,7 +161,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[4]}">${phrase[4]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -180,7 +180,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
 <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[5]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -198,7 +198,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
 <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[6]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -216,7 +216,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
 <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[7]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -234,7 +234,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
 <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[8]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -252,7 +252,7 @@ ${req.url=="/"?"":extra}
   </div>
   <hr>
 <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/1600x900/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[9]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
