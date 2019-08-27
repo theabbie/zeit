@@ -11,7 +11,7 @@ var result = `
 `;
 for (i=0; i<10000; i++) {result+=`
    <url>
-      <loc>http://www.paige.now.sh/${faker.hacker.phrase()}</loc>
+      <loc>https://${req.headers.host}/${faker.hacker.phrase()}</loc>
       <lastmod>2019-08-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1</priority>
@@ -89,7 +89,7 @@ ${req.url=="/"?"":extra}
   <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="https://paige.now.sh/${phrase[0]}">${phrase[0]}</a></b></h3>
+      <h3><b><a href="/${phrase[0]}">${phrase[0]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -107,7 +107,7 @@ ${req.url=="/"?"":extra}
   <div class="w3-card-4 w3-margin w3-white">
   <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Norway" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="https://paige.now.sh/${phrase[1]}">${phrase[1]}</a></b></h3>
+      <h3><b><a href="/${phrase[1]}">${phrase[1]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 2, 2019</span></h5>
     </div>
 
@@ -126,7 +126,7 @@ ${req.url=="/"?"":extra}
   <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[2]}</a></b></h3>
+      <h3><b><a href="/${phrase[2]}">${phrase[2]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -144,7 +144,7 @@ ${req.url=="/"?"":extra}
   <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="https://paige.now.sh/${phrase[3]}">${phrase[3]}</a></b></h3>
+      <h3><b><a href="/${phrase[3]}">${phrase[3]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
 
@@ -163,7 +163,7 @@ ${req.url=="/"?"":extra}
   <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="https://paige.now.sh/${phrase[4]}">${phrase[4]}</a></b></h3>
+      <h3><b><a href="/${phrase[4]}">${phrase[4]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
 
@@ -182,7 +182,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[5]}</a></b></h3>
+      <h3><b><a href="/${phrase[2]}">${phrase[5]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -200,7 +200,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[6]}</a></b></h3>
+      <h3><b><a href="/${phrase[2]}">${phrase[6]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -218,7 +218,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[7]}</a></b></h3>
+      <h3><b><a href="/${phrase[2]}">${phrase[7]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -236,7 +236,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[8]}</a></b></h3>
+      <h3><b><a href="/${phrase[2]}">${phrase[8]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -254,7 +254,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="https://paige.now.sh/${phrase[2]}">${phrase[9]}</a></b></h3>
+      <h3><b><a href="/${phrase[2]}">${phrase[9]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -293,28 +293,28 @@ ${req.url=="/"?"":extra}
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
-        <a href="https://paige.now.sh/${words[0]}">
+        <a href="/${words[0]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${words[0]}</span><br>
         <span>${faker.name.firstName()}</span>
         </a>
       </li>
       <li class="w3-padding-16">
-       <a href="https://paige.now.sh/${words[1]}">
+       <a href="/${words[1]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${words[1]}</span><br>
         <span>${faker.name.firstName()}</span>
         </a>
       </li> 
       <li class="w3-padding-16">
-      <a href="https://paige.now.sh/${words[2]}">
+      <a href="/${words[2]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${words[2]}</span><br>
         <span>${faker.name.firstName()}</span>
         </a>
       </li>   
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-      <a href="https://paige.now.sh/${words[3]}">
+      <a href="/${words[3]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${words[3]}</span><br>
         <span>${faker.name.firstName()}</span>
@@ -363,7 +363,7 @@ ${req.url=="/"?"":extra}
 
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="https://paige.now.sh/">Next &raquo;</a></button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="https://${req.headers.host}/">Next &raquo;</a></button>
   <p class="w3-text-white w3-large">PAIGE</p>
 </footer>
 </body>
