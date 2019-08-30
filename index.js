@@ -25,7 +25,7 @@ res.end(result);
 
 app.get("/*", function(req,res) {
 var phrase = [];
-axios.get("https://www.title-generator.com/best-online-title-generator.html?qs=technology&page=1").then(function(x) {
+axios.get("https://www.title-generator.com/best-online-title-generator.html?qs=machine learning&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
 var extra = `
 <img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
