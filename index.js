@@ -295,28 +295,28 @@ ${req.url=="/"?"":extra}
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
-        <a href="/${words[0]}">
+        <a href="/${phrase[0]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[10]}</span><br>
         <span>${faker.name.firstName()}</span>
         </a>
       </li>
       <li class="w3-padding-16">
-       <a href="/${words[1]}">
+       <a href="/${phrase[1]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[11]}</span><br>
         <span>${faker.name.firstName()}</span>
         </a>
       </li> 
       <li class="w3-padding-16">
-      <a href="/${words[2]}">
+      <a href="/${phrase[2]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[12]}</span><br>
         <span>${faker.name.firstName()}</span>
         </a>
       </li>   
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-      <a href="/${words[3]}">
+      <a href="/${phrase[3]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[13]}</span><br>
         <span>${faker.name.firstName()}</span>
