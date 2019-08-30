@@ -298,28 +298,24 @@ ${req.url=="/"?"":extra}
         <a href="/${phrase[0]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[10]}</span><br>
-        <span>${faker.name.firstName()}</span>
         </a>
       </li>
       <li class="w3-padding-16">
        <a href="/${phrase[1]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[11]}</span><br>
-        <span>${faker.name.firstName()}</span>
         </a>
       </li> 
       <li class="w3-padding-16">
       <a href="/${phrase[2]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[12]}</span><br>
-        <span>${faker.name.firstName()}</span>
         </a>
       </li>   
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
       <a href="/${phrase[3]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[13]}</span><br>
-        <span>${faker.name.firstName()}</span>
         </a>
       </li>  
     </ul>
