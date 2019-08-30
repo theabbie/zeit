@@ -8,11 +8,14 @@ var db = new store({path: '/tmp/data.json'});
 app.get("/sitemap*", function(req,res) {
 var result = `
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 `;
 for (i=0; i<10000; i++) {result+=`
    <url>
       <loc>https://${req.headers.host}/${faker.hacker.phrase()}</loc>
+      <image:image>
+      <image:loc>https://source.unsplash.com/800x450/?${faker.random.words()}</image:loc>
+      </image:image>
       <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
       <changefreq>daily</changefreq>
       <priority>1</priority>
