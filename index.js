@@ -2,6 +2,7 @@ var app = require('express')();
 var axios = require('axios');
 var faker = require('faker');
 var store = require('data-store');
+const $ = require("cheerio");
 var db = new store({path: '/tmp/data.json'});
 
 app.get("/sitemap*", function(req,res) {
@@ -23,7 +24,9 @@ res.end(result);
 })
 
 app.get("/*", function(req,res) {
-var phrase = [faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase(),faker.hacker.phrase()];
+var phrase = [];
+axios.get("https://www.title-generator.com/best-online-title-generator.html?qs=technology&page=1").then(function(x) {
+$("td:nth-child(2)",x).contents().each(function(i,x) {phrase.push($(this).text())})
 var words = [faker.random.words(),faker.random.words(),faker.random.words(),faker.random.words()];
 var extra = `
 <img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
@@ -377,6 +380,7 @@ x.addEventListener("click",function() {location.reload()})
 db.set(decodeURIComponent(req.url.substring(1)),result)
 res.setHeader("content-type","text/html")
 res.end(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):result);
+})
 })
 
 app.listen(process.env.PORT);
