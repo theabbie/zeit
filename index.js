@@ -27,7 +27,6 @@ res.end(result);
 })
 
 app.get("/*", function(req,res) {
-if (!req.headers.referer && req.url!="/") {res.status(404)}
 var phrase = [];
 axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.tag || ['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())])+"&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
@@ -92,7 +91,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <h1><b>${req.url=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</b></h1>
   <p>Welcome to the blog of <span class="w3-tag"><a href="https://github.com/theabbie">Abhishek</a></span></p>
 </header>
-${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):(!req.headers.referer?"404":extra))}
+${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)}
 <div class="w3-row">
 <div class="w3-col l8 s12">
   <div class="w3-card-4 w3-margin w3-white">
