@@ -27,7 +27,6 @@ app.get("/*", function(req,res) {
 var phrase = [];
 axios.get("https://www.title-generator.com/best-online-title-generator.html?qs=technology&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
-var words = [faker.random.words(),faker.random.words(),faker.random.words(),faker.random.words()];
 var extra = `
 <img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
@@ -185,7 +184,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="/${phrase[2]}">${phrase[5]}</a></b></h3>
+      <h3><b><a href="/${phrase[5]}">${phrase[5]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -203,7 +202,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="/${phrase[2]}">${phrase[6]}</a></b></h3>
+      <h3><b><a href="/${phrase[6]}">${phrase[6]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -221,7 +220,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="/${phrase[2]}">${phrase[7]}</a></b></h3>
+      <h3><b><a href="/${phrase[7]}">${phrase[7]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -239,7 +238,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="/${phrase[2]}">${phrase[8]}</a></b></h3>
+      <h3><b><a href="/${phrase[8]}">${phrase[8]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -257,7 +256,7 @@ ${req.url=="/"?"":extra}
 <div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="/${phrase[2]}">${phrase[9]}</a></b></h3>
+      <h3><b><a href="/${phrase[9]}">${phrase[9]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
@@ -298,28 +297,28 @@ ${req.url=="/"?"":extra}
       <li class="w3-padding-16">
         <a href="/${words[0]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${words[0]}</span><br>
+        <span class="w3-large">${phrase[10]}</span><br>
         <span>${faker.name.firstName()}</span>
         </a>
       </li>
       <li class="w3-padding-16">
        <a href="/${words[1]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${words[1]}</span><br>
+        <span class="w3-large">${phrase[11]}</span><br>
         <span>${faker.name.firstName()}</span>
         </a>
       </li> 
       <li class="w3-padding-16">
       <a href="/${words[2]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${words[2]}</span><br>
+        <span class="w3-large">${phrase[12]}</span><br>
         <span>${faker.name.firstName()}</span>
         </a>
       </li>   
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
       <a href="/${words[3]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${words[3]}</span><br>
+        <span class="w3-large">${phrase[13]}</span><br>
         <span>${faker.name.firstName()}</span>
         </a>
       </li>  
