@@ -312,7 +312,7 @@ ${req.url=="/"?"":extra}
         <span class="w3-large">${phrase[12]}</span><br>
         </a>
       </li>   
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+      <li class="w3-padding-16">
       <a href="/${phrase[3]}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[13]}</span><br>
