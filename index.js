@@ -376,7 +376,7 @@ x.addEventListener("click",function() {location.reload()})
 </script>
 </html>
 `;
-db.set(decodeURIComponent(req.url.substring(1)),result)
+if(!db.has(decodeURIComponent(req.url.substring(1)))) {db.set(decodeURIComponent(req.url.substring(1)),result)}
 res.setHeader("content-type","text/html")
 res.end(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):result);
 })
