@@ -25,7 +25,7 @@ res.end(result);
 
 app.get("/*", function(req,res) {
 var phrase = [];
-axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]+"&page=1").then(function(x) {
+axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.tag || ['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())])+"&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
 var extra = `
 <img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
@@ -85,7 +85,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
   <h1><b>${req.url=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</b></h1>
-  <p>Welcome to the blog of <span class="w3-tag">Abhishek</span></p>
+  <p>Welcome to the blog of <span class="w3-tag"><a href="https://github.com/theabbie">Abhishek</a></span></p>
 </header>
 ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)}
 <div class="w3-row">
@@ -330,7 +330,12 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
       <h4>Tags</h4>
     </div>
     <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Java</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Python</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">C++</span>
+    <p>
+    <span class="w3-tag w3-light-grey w3-margin-bottom">TECHNOLOGY</span> 
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">UNIVERSE</span> 
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">AI</span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">MACHINE LEARNING</span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">PROGRAMMING</span>
     </p>
     </div>
   </div>
@@ -369,7 +374,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
 </body>
 <script>
 document.querySelectorAll(".w3-tag").forEach(function(x) {
-x.addEventListener("click",function() {location.reload()})
+x.addEventListener("click",function() {location.href="?tag="x.innerHTML})
 })
 </script>
 </html>
