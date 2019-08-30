@@ -5,10 +5,6 @@ var store = require('data-store');
 const $ = require("cheerio");
 var db = new store({path: '/tmp/data.json'});
 
-app.get("/data", function(req,res) {
-res.sendFile('/tmp/data.json');
-})
-
 app.get("/sitemap*", function(req,res) {
 var result = `
 <?xml version="1.0" encoding="UTF-8"?>
