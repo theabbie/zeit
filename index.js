@@ -14,7 +14,7 @@ for (i=0; i<10000; i++) {result+=`
    <url>
       <loc>https://${req.headers.host}/${faker.hacker.phrase()}</loc>
       <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-      <changefreq>monthly</changefreq>
+      <changefreq>daily</changefreq>
       <priority>1</priority>
    </url>
 `}
