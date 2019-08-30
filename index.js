@@ -53,6 +53,8 @@ var extra = `
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 <h3 class="w3-container w3-padding-32">Also see:</h3>
 `
+if(!db.has(decodeURIComponent(req.url.substring(1)))) {db.set(decodeURIComponent(req.url.substring(1)),extra)}
+
 var result = `
 <!DOCTYPE html>
 <html>
@@ -89,7 +91,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <h1><b>${req.url=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</b></h1>
   <p>Welcome to the blog of <span class="w3-tag">Abhishek</span></p>
 </header>
-${req.url=="/"?"":extra}
+${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)}
 <div class="w3-row">
 <div class="w3-col l8 s12">
   <div class="w3-card-4 w3-margin w3-white">
@@ -376,9 +378,8 @@ x.addEventListener("click",function() {location.reload()})
 </script>
 </html>
 `;
-if(!db.has(decodeURIComponent(req.url.substring(1)))) {db.set(decodeURIComponent(req.url.substring(1)),result)}
 res.setHeader("content-type","text/html")
-res.end(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):result);
+res.end(result);
 })
 })
 
