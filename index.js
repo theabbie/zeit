@@ -27,7 +27,7 @@ res.end(result);
 })
 
 app.get("/*", function(req,res) {
-if (!req.headers.referer && req.url!="/") {res.statusCode(404)}
+if (!req.headers.referer && req.url!="/") {res.status(404)}
 var phrase = [];
 axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.tag || ['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())])+"&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
