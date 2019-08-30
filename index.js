@@ -383,7 +383,7 @@ x.addEventListener("click",function() {location.href="#"+x.innerHTML})
 </script>
 </html>
 `;
-res.setHeader("content-type","text/html")
+res.setHeader("content-type","text/html");
 res.end(result);
 })
 })
