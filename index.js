@@ -374,7 +374,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
 </body>
 <script>
 document.querySelectorAll(".w3-tag").forEach(function(x) {
-x.addEventListener("click",function() {location.href="?tag="x.innerHTML})
+x.addEventListener("click",function() {location.href="?tag="+x.innerHTML})
 })
 </script>
 </html>
