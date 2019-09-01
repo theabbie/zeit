@@ -13,9 +13,6 @@ var result = `
 for (i=0; i<10000; i++) {result+=`
    <url>
       <loc>https://${req.headers.host}/${faker.hacker.phrase()}</loc>
-      <image:image>
-      <image:loc>https://source.unsplash.com/800x450/?${faker.random.words()}</image:loc>
-      </image:image>
       <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
       <changefreq>daily</changefreq>
       <priority>1</priority>
