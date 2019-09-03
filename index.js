@@ -14,6 +14,21 @@ var result =
 for (i=0; i<x.data.length; i++) {result+=
 `<url>
 <loc>https://${req.headers.host}/${x.data[i].split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;").trim()}</loc>
+<image:image>
+<image:loc>
+https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}
+</image:loc>
+</image:image>
+<image:image>
+<image:loc>
+https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}
+</image:loc>
+</image:image>
+<image:image>
+<image:loc>
+https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}
+</image:loc>
+</image:image>
 <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
