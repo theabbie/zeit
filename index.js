@@ -108,7 +108,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
 <div class="w3-row">
 <div class="w3-col l8 s12">
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[0]}">${phrase[0]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -126,7 +126,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-  <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Norway" style="width:100%">
+  <img src="https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}" alt="Norway" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[1]}">${phrase[1]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 2, 2019</span></h5>
@@ -145,7 +145,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[2]}">${phrase[2]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -163,7 +163,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[3]}">${phrase[3]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -182,7 +182,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
   </div>
   <hr>
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[4]}">${phrase[4]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -201,7 +201,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
   </div>
   <hr>
 <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[5]}">${phrase[5]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -219,7 +219,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
   </div>
   <hr>
 <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[6]}">${phrase[6]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -237,7 +237,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
   </div>
   <hr>
 <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[7]}">${phrase[7]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -255,7 +255,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
   </div>
   <hr>
 <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[8]}">${phrase[8]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
@@ -273,7 +273,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
   </div>
   <hr>
 <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/800x450/?${faker.random.words()}" alt="Nature" style="width:100%">
+    <img src="https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[9]}">${phrase[9]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
