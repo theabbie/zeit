@@ -13,7 +13,7 @@ var result =
 `;
 for (i=0; i<x.data.length; i++) {result+=
 `<url>
-<loc>https://${req.headers.host}/${x.data[i].split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;")}</loc>
+<loc>https://${req.headers.host}/${x.data[i].split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;").trim()}</loc>
 <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
