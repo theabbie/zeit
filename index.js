@@ -29,6 +29,11 @@ https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Le
 https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}
 </image:loc>
 </image:image>
+<image:image>
+<image:loc>
+https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg
+</image:loc>
+</image:image>
 <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
