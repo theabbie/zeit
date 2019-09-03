@@ -20,7 +20,7 @@ for (i=0; i<x.data.length; i++) {result+=`
    </url>
 `}
 result+=`</urlset>`
-res.setHeader("content-type","text/xml");
+res.type("application/xml");
 res.end(result);
 })
 })
