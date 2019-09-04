@@ -51,7 +51,7 @@ res.end(result);
 
 app.get("/*", function(req,res) {
 var phrase = [];
-axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.tag || ['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())])+"&page=1").then(function(x) {
+axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.s || ['technology','universe','AI','Machine Learning','Programming','adsense'][Math.floor(5*Math.random())])+"&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
 var extra = 
 `<img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
@@ -375,6 +375,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">AI</span>
     <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">MACHINE LEARNING</span>
     <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">PROGRAMMING</span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">ADSENSE</span>
     </p>
     </div>
   </div>
