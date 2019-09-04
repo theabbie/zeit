@@ -51,7 +51,7 @@ res.end(result);
 
 app.get("/*", function(req,res) {
 var phrase = [];
-axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.s || ['technology','universe','AI','Machine Learning','Programming','adsense'][Math.floor(5*Math.random())])+"&page=1").then(function(x) {
+axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.s || ['technology','universe','AI','Machine Learning','Programming','adsense'][Math.floor(6*Math.random())])+"&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
 var extra = 
 `<img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
@@ -127,7 +127,7 @@ a {text-decoration: none;}
 <div class="w3-content" style="max-width:1400px">
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>${req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</b></h1>
+  <h1><b><a href="https://${req.headers.host}">${req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</a></b></h1>
   <p>Welcome to the blog of <span class="w3-tag"><a href="https://github.com/theabbie">Abhishek</a></span></p>
 </header>
 ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)}
