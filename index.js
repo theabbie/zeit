@@ -120,7 +120,7 @@ a {text-decoration: none;}
   <p>Welcome to the blog of <span class="w3-tag"><a href="https://github.com/theabbie">Abhishek</a></span></p>
 </header>
 ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)}
-<center><input type="text" class="search w3-card w3-input w3-border w3-round-large w3-margin" style="width:75%;" Placeholder="Search"></center>
+<center><form><input name="s" type="text" class="search w3-card w3-input w3-border w3-round-large w3-margin" style="width:75%;" Placeholder="Search"></form></center>
 <div class="w3-row">
 <div class="w3-col l8 s12">
   <div class="w3-card-4 w3-margin w3-white">
