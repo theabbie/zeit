@@ -5,66 +5,6 @@ var store = require('data-store');
 const $ = require("cheerio");
 var db = new store({path: '/tmp/data.json'});
 
-app.get("/keybase.txt", function(req,res) {
-res.setHeader("content-type","text/plain");
-res.end(`==================================================================
-https://keybase.io/theabbie
---------------------------------------------------------------------
-
-I hereby claim:
-
-  * I am an admin of https://iferr.now.sh
-  * I am theabbie (https://keybase.io/theabbie) on keybase.
-  * I have a public key ASCFVfM5X3QlT3kzUtRjDAHPmDO2gjhQde0Kw3kUQWL-8Qo
-
-To do so, I am signing this object:
-
-{
-  "body": {
-    "key": {
-      "eldest_kid": "01017faddb07290e96d8257bbe4e47d1d24c707ab063c26210120556e6a8188696a50a",
-      "host": "keybase.io",
-      "kid": "01208555f3395f74254f793352d4630c01cf9833b682385075ed0ac379144162fef10a",
-      "uid": "cc1e5781045e0d8e8c507cacc390b619",
-      "username": "theabbie"
-    },
-    "merkle_root": {
-      "ctime": 1567541040,
-      "hash": "05825bb6566d8ce50643d37483f260bec83a3c128548765d636db3fee047cde8fac279c1d20376fb47b770def06105cb3182dcda74014be3df14b8fc460dbcd8",
-      "hash_meta": "2ca2154132372546d2b2c42914ca2cc955928472463eaa62887f402c70fc7cff",
-      "seqno": 6161941
-    },
-    "service": {
-      "entropy": "MdBeXYHiU6ipdzdGJzpBYrIP",
-      "hostname": "iferr.now.sh",
-      "protocol": "https:"
-    },
-    "type": "web_service_binding",
-    "version": 2
-  },
-  "client": {
-    "name": "keybase.io go client",
-    "version": "4.3.0"
-  },
-  "ctime": 1567541072,
-  "expire_in": 504576000,
-  "prev": "dcefdd735ecf1b0509ad5c3115e9913208c1badd0235cb418982e384a0eee33f",
-  "seqno": 10,
-  "tag": "signature"
-}
-
-which yields the signature:
-
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEghVXzOV90JU95M1LUYwwBz5gztoI4UHXtCsN5FEFi/vEKp3BheWxvYWTESpcCCsQg3O/dc17PGwUJrVwxFemRMgjBut0CNctBiYLjhKDu4z/EIE++ZccG6Gun5KJTEFxbB6LqIqDDY0A9J+SjE8CHOVCjAgHCo3NpZ8RAMRl3hFXDcDYB+mrnxYQC06kpnV323Pu/iqcgCHE6JFDgOH2ROKOamHrTUoMFroBDw50/KDBqMufHUQLE0nR3AqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGAsLbQl/HJZJYjg70AUZtc862NK//R2KkIsSauZ5Qhvo3RhZ80CAqd2ZXJzaW9uAQ==
-
-And finally, I am proving ownership of this host by posting or
-appending to this document.
-
-View my publicly-auditable identity here: https://keybase.io/theabbie
-
-==================================================================`)
-})
-
 app.get("/sitemap*", function(req,res) {
 axios("https://hl-upfbwr4pp09a.runkit.sh/").then(function(x) {
 x.data.reverse();
@@ -79,17 +19,17 @@ for (i=0; i<x.data.length; i++) {result+=
 <loc>https://${req.headers.host}/${x.data[i].split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;").trim()}</loc>
 <image:image>
 <image:loc>
-https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}
+https://source.unsplash.com/800x450/?${faker.random.words()}
 </image:loc>
 </image:image>
 <image:image>
 <image:loc>
-https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}
+https://source.unsplash.com/800x450/?${faker.random.words()}
 </image:loc>
 </image:image>
 <image:image>
 <image:loc>
-https://source.unsplash.com/800x450/?${['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())]}
+https://source.unsplash.com/800x450/?${faker.random.words()}
 </image:loc>
 </image:image>
 <image:image>
