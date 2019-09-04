@@ -73,7 +73,7 @@ var extra =
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 <img src="https://source.unsplash.com/800x450/?network" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
-<h3 class="w3-container w3-padding-32">${decodeURIComponent(req.url).split("?s=").length==2:"Search results for"+req.query.s:"Also see:"}</h3>
+<h3 class="w3-container w3-padding-32">${decodeURIComponent(req.url).split("?s=").length==2:("Search results for"+req.query.s):"Also see:"}</h3>
 `
 if(!db.has(decodeURIComponent(req.url.substring(1)))) {db.set(decodeURIComponent(req.url.substring(1)),extra)}
 
