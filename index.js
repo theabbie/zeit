@@ -73,7 +73,7 @@ var extra =
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 <img src="https://source.unsplash.com/800x450/?network" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
-<h3 class="w3-container w3-padding-32">${decodeURIComponent(req.url).split("?s=").length==2?("Search results for"+req.query.s):"Also see:"}</h3>
+<h3 class="w3-container w3-padding-32">Also see:</h3>
 `
 if(!db.has(decodeURIComponent(req.url.substring(1)))) {db.set(decodeURIComponent(req.url.substring(1)),extra)}
 
@@ -100,7 +100,7 @@ var result =
 <meta name="description" content="${req.url=="/"?req.headers.host.split(".")[0].toUpperCase()+" official":decodeURIComponent(req.url.substring(1))}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/Adobe_Post_20190830_210419.png">
-<title>${req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</title>
+<title>${req.url=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -118,8 +118,9 @@ a {text-decoration: none;}
   <h1><b>${req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</b></h1>
   <p>Welcome to the blog of <span class="w3-tag"><a href="https://github.com/theabbie">Abhishek</a></span></p>
 </header>
-${decodeURIComponent(req.url).split("?s=").length==1?(req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)):""}
+${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)}
 <center><form action="https://${req.headers.host}"><input name="s" type="text" class="search w3-card w3-input w3-border w3-round-large w3-margin" style="width:75%;" Placeholder="Search"></form></center>
+<h3 class="w3-container w3-padding-32">${("Search results for "+req.query.s) || ""}</h3>
 <div class="w3-row">
 <div class="w3-col l8 s12">
   <div class="w3-card-4 w3-margin w3-white">
