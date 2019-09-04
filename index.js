@@ -120,7 +120,7 @@ a {text-decoration: none;}
 </header>
 ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)}
 <center><form action="https://${req.headers.host}"><input name="s" type="text" class="search w3-card w3-input w3-border w3-round-large w3-margin" style="width:75%;" Placeholder="Search"></form></center>
-<h3 class="w3-container w3-padding-32">${("Search results for "+req.query.s) || ""}</h3>
+<h3 class="w3-container w3-padding-32">${("Search results for "+req.query.s.bold()) || ""}</h3>
 <div class="w3-row">
 <div class="w3-col l8 s12">
   <div class="w3-card-4 w3-margin w3-white">
