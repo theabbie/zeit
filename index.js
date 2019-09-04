@@ -53,8 +53,8 @@ app.get("/*", function(req,res) {
 var phrase = [];
 axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.tag || ['technology','universe','AI','Machine Learning','Programming'][Math.floor(5*Math.random())])+"&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
-var extra = `
-<img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
+var extra = 
+`<img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 <h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
 <img src="https://source.unsplash.com/800x450/?coding" alt="Norway" style="width:100%">
@@ -77,8 +77,8 @@ var extra = `
 `
 if(!db.has(decodeURIComponent(req.url.substring(1)))) {db.set(decodeURIComponent(req.url.substring(1)),extra)}
 
-var result = `
-<!DOCTYPE html>
+var result = 
+`<!DOCTYPE html>
 <html>
 <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -104,9 +104,7 @@ a {text-decoration: none;}
 </style>
 </head>
 <body class="w3-light-grey">
-
 <div class="w3-content" style="max-width:1400px">
-
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
   <h1><b>${req.url=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</b></h1>
@@ -139,7 +137,6 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
       <h3><b><a href="/${phrase[1]}">${phrase[1]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 2, 2019</span></h5>
     </div>
-
     <div class="w3-container">
       <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
       <div class="w3-row">
@@ -176,7 +173,6 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
       <h3><b><a href="/${phrase[3]}">${phrase[3]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
-
     <div class="w3-container">
       <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
       <div class="w3-row">
@@ -195,7 +191,6 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
       <h3><b><a href="/${phrase[4]}">${phrase[4]}</a></b></h3>
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
-
     <div class="w3-container">
       <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
       <div class="w3-row">
@@ -300,7 +295,6 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
   <hr>
 <!-- END BLOG ENTRIES -->
 </div>
-
 <!-- Introduction menu -->
 <div class="w3-col l4">
   <!-- About Card -->
@@ -314,7 +308,6 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
       </p>
     </div>
   </div><hr>
-  
   <!-- Posts -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
@@ -348,7 +341,6 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
     </ul>
   </div>
   <hr> 
- 
   <!-- Labels / tags -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
@@ -364,9 +356,7 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
     </p>
     </div>
   </div>
-
 <!-- AD -->
-
 <div class="w3-card w3-margin">
 <center><h3>AD</h3></center>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -381,16 +371,12 @@ ${req.url=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decod
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
   </div>
-  
 <!-- END Introduction Menu -->
 </div>
-
 <!-- END GRID -->
 </div><br>
-
 <!-- END w3-content -->
 </div>
-
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="https://${req.headers.host}/">Next &raquo;</a></button>
@@ -402,8 +388,7 @@ document.querySelectorAll(".w3-tag").forEach(function(x) {
 x.addEventListener("click",function() {location.href="#"+x.innerHTML})
 })
 </script>
-</html>
-`;
+</html>`;
 res.setHeader("content-type","text/html");
 res.end(result);
 })
