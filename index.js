@@ -98,14 +98,65 @@ var result =
 </script>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "url": "https://${req.headers.host}/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://${req.headers.host}/?s={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
+   "@context":"https://schema.org",
+   "@graph":[
+      {
+         "@type":"Organization",
+         "@id":"https://${req.headers.host}",
+         "name":"${req.headers.host.split(".")[0]}",
+         "url":"https://${req.headers.host}",
+         "sameAs":[
+            "https://www.facebook.com/abhishek.vice.versa",
+            "https://instagram.com/sasta_abbie",
+            "https://www.linkedin.com/in/abhishek-choudhary-a9a016102/",
+            "https://www.youtube.com/abhishekchaudharyhome",
+            "https://www.pinterest.com/abhishek7gg7",
+            "https://twitter.com/theabbiee",
+            "https://github.com/theabbie"
+         ],
+         "logo":{
+            "@type":"ImageObject",
+            "@id":"https://${req.headers.host}",
+            "url":"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg",
+            "width": 400,
+            "height":225,
+            "caption":"${req.headers.host.split(".")[0]}"
+         },
+         "image":{
+            "@id":"https://${req.headers.host}"
+         }
+      },
+      {
+         "@type":"WebSite",
+         "@id":"https://${req.headers.host}",
+         "url":"https://${req.headers.host}",
+         "name":"${req.headers.host.split(".")[0]}",
+         "publisher":{
+            "@id":"https://${req.headers.host}"
+         },
+         "potentialAction":{
+            "@type":"SearchAction",
+            "target":"https://${req.headers.host}/?s={search_term_string}",
+            "query-input":"required name=search_term_string"
+         }
+      },
+      {
+         "@type":"WebPage",
+         "@id":"https://${req.headers.host}",
+         "url":"https://${req.headers.host}",
+         "inLanguage":"en-US",
+         "name":"${req.headers.host.split(".")[0]} official",
+         "isPartOf":{
+            "@id":"https://${req.headers.host}"
+         },
+         "about":{
+            "@id":"https://${req.headers.host}"
+         },
+         "datePublished":"${new Date().toISOString()}",
+         "dateModified":"${new Date().toISOString()}",
+         "description":"${req.headers.host.split(".")[0].toUpperCase()} official is a blog about modern interests, sciences, AI, and Machine learning"
+      }
+   ]
 }
 </script>
 <meta name="google-site-verification" content="esWdvsZT7Pj4JUmY9NRbjNri9UawGrXbDGBcDgcK3Uo" />
