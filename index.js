@@ -5,6 +5,8 @@ var store = require('data-store');
 const $ = require("cheerio");
 var db = new store({path: '/tmp/data.json'});
 
+app.get("/logo", function(req,res) {res.redirect(301,"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg")}
+
 app.get("/sitemap*", function(req,res) {
 axios("https://hl-upfbwr4pp09a.runkit.sh/").then(function(x) {
 x.data.reverse();
@@ -117,7 +119,7 @@ var result =
          "logo":{
             "@type":"ImageObject",
             "@id":"https://${req.headers.host}",
-            "url":"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg",
+            "url":"https://${req.headers.host}/logo",
             "width": 400,
             "height":225,
             "caption":"${req.headers.host.split(".")[0]}"
