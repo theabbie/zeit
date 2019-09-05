@@ -164,7 +164,7 @@ var result =
     "@type": "WebPage",
     "@id": "https://${req.headers.host+req.url}"
   },
-  "headline": "${decodeURIComponent(req.url.substring(1))}",
+  "headline": "${decodeURIComponent(req.url.substring(1))+"-"+req.headers.host.split(".")[0]}",
   "image": [
     "https://${req.headers.host}/logo"
    ],
