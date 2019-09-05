@@ -58,10 +58,10 @@ axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
 var extra = 
 `<img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
-<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
-<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${content[0].text}</h4>
+<h4 class="w3-container w3-padding-32">${content[1].text+" "+content[2].text}</h4>
 <img src="https://source.unsplash.com/800x450/?coding" alt="Norway" style="width:100%">
-<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${content[3].text}</h4>
 <b>Advertisement</b><br>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -73,9 +73,9 @@ var extra =
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${content[4].text+" "+content[5].text}</h4>
 <img src="https://source.unsplash.com/800x450/?network" alt="Norway" style="width:100%">
-<h4 class="w3-container w3-padding-32">${faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()+faker.hacker.phrase()}</h4>
+<h4 class="w3-container w3-padding-32">${content[5].text+" "+content[6].text}</h4>
 <h3 class="w3-container w3-padding-32">Also see:</h3>
 `
 if(!db.has(decodeURIComponent(req.url.substring(1)))) {db.set(decodeURIComponent(req.url.substring(1)),extra)}
