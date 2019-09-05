@@ -221,7 +221,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
-      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <p>${phrase[0]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -239,7 +239,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
       <h5>${faker.random.words()}, <span class="w3-opacity">April 2, 2019</span></h5>
     </div>
     <div class="w3-container">
-      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <p>${phrase[1]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -257,7 +257,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
-      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <p>${phrase[2]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -275,7 +275,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
-      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <p>${phrase[3]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -293,7 +293,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
-      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <p>${phrase[4]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -311,7 +311,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
-      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <p>${phrase[5]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -329,7 +329,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
-      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <p>${phrase[6]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -347,7 +347,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
-      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <p>${phrase[7]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -365,7 +365,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
-      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <p>${phrase[8]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -383,7 +383,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
       <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
-      <p>${faker.hacker.phrase()+faker.hacker.phrase()}</p>
+      <p>${phrase[9]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
