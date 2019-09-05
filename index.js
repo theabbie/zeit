@@ -165,7 +165,7 @@ var result =
 <meta name="description" content="${req.url=="/"?req.headers.host.split(".")[0].toUpperCase()+" official":decodeURIComponent(req.url.substring(1))}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/Adobe_Post_20190830_210419.png">
-<title>${req.query.s?("Search results for"+req.query.s):(req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1)))}</title>
+<title>${req.query.s?("Search results for "+req.query.s):(req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1)))}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
