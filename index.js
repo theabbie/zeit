@@ -53,15 +53,17 @@ res.end(result);
 
 app.get("/*", function(req,res) {
 var phrase = [];
-axios.get("https://typi.tk/?url=https://m.wikihow-fun.com/Special:Randomizer&sel=.step&attribs=classs&static=true").then(function(content) {
+axios.get("https://typi.tk/?url=https://m.wikihow-fun.com/Special:Randomizer&sel=.step&attribs=classs&static=true").then(function(contents) {
 axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.s || ['technology','universe','AI','Machine Learning','Programming','adsense'][Math.floor(6*Math.random())])+"&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
+var content = []
+for (i=0; i<9; i++) {content[i]=(contents.data[i] || {text: ""})}
 var extra = 
 `<img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
-<h4 class="w3-container w3-padding-32">${content.data[0].text}</h4>
-<h4 class="w3-container w3-padding-32">${content.data[1].text+" "+content.data[2].text}</h4>
+<h4 class="w3-container w3-padding-32">${content[0].text}</h4>
+<h4 class="w3-container w3-padding-32">${content[1].text+" "+content[2].text}</h4>
 <img src="https://source.unsplash.com/800x450/?coding" alt="Norway" style="width:100%">
-<h4 class="w3-container w3-padding-32">${content.data[3].text}</h4>
+<h4 class="w3-container w3-padding-32">${content[3].text+" "+content[4].text}</h4>
 <b>Advertisement</b><br>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -73,9 +75,9 @@ var extra =
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<h4 class="w3-container w3-padding-32">${content.data[4].text+" "+content[5].text}</h4>
+<h4 class="w3-container w3-padding-32">${content[5].text+" "+content[6].text}</h4>
 <img src="https://source.unsplash.com/800x450/?network" alt="Norway" style="width:100%">
-<h4 class="w3-container w3-padding-32">${content.data[5].text+" "+content.data[6].text}</h4>
+<h4 class="w3-container w3-padding-32">${content[7].text+" "+content[8].text}</h4>
 <h3 class="w3-container w3-padding-32">Also see:</h3>
 `
 if(!db.has(decodeURIComponent(req.url.substring(1)))) {db.set(decodeURIComponent(req.url.substring(1)),extra)}
