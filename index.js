@@ -52,9 +52,10 @@ res.end(result);
 })
 
 app.get("/*", function(req,res) {
+var topics = ['technology','universe','ai','machine learning','programming','adsense'];
 var phrase = [];
 axios.get("https://typi.tk/?url=https://m.wikihow-fun.com/Special:Randomizer&sel=.step&attribs=classs&static=true").then(function(contents) {
-axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.s || ['technology','universe','AI','Machine Learning','Programming','adsense'][Math.floor(6*Math.random())])+"&page=1").then(function(x) {
+axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.s?(topic.includes(req.query.s)?req.query.s:topics[Math.floor((topics.length)*Math.random())]):topics[Math.floor((topics.length)*Math.random())])+"&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
 var content = []
 for (i=0; i<9; i++) {content[i]=(contents.data[i] || {text: ""})}
@@ -453,11 +454,11 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <div class="w3-container w3-white">
     <p>
     <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-margin-bottom">TECHNOLOGY</span></a>
-    <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">UNIVERSE</span></a>
-    <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">AI</span></a>
-    <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">MACHINE LEARNING</span></a>
-    <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">PROGRAMMING</span></a>
-    <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">ADSENSE</span></a>
+    <a href="/?s=universe"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">UNIVERSE</span></a>
+    <a href="/?s=AI"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">AI</span></a>
+    <a href="/?s=Machine Learning"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">MACHINE LEARNING</span></a>
+    <a href="/?s=Programming"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">PROGRAMMING</span></a>
+    <a href="/?s=Adsense"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">ADSENSE</span></a>
     </p>
     </div>
   </div>
