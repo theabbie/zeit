@@ -55,7 +55,7 @@ app.get("/*", function(req,res) {
 var topics = ['technology','universe','ai','machine learning','programming','adsense'];
 var phrase = [];
 axios.get("https://typi.tk/?url=https://m.wikihow-fun.com/Special:Randomizer&sel=.step&attribs=classs&static=true").then(function(contents) {
-axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.s?(topic.includes(req.query.s)?req.query.s:topics[Math.floor((topics.length)*Math.random())]):topics[Math.floor((topics.length)*Math.random())])+"&page=1").then(function(x) {
+axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.s?(topic.includes(req.query.s.toLowerCase())?req.query.s:topics[Math.floor((topics.length)*Math.random())]):topics[Math.floor((topics.length)*Math.random())])+"&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
 var content = []
 for (i=0; i<9; i++) {content[i]=(contents.data[i] || {text: ""})}
