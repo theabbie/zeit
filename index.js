@@ -423,12 +423,12 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     </div>
     <div class="w3-container w3-white">
     <p>
-    <span class="w3-tag w3-light-grey w3-margin-bottom">TECHNOLOGY</span> 
-    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">UNIVERSE</span> 
-    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">AI</span>
-    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">MACHINE LEARNING</span>
-    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">PROGRAMMING</span>
-    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">ADSENSE</span>
+    <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-margin-bottom">TECHNOLOGY</span></a>
+    <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">UNIVERSE</span></a>
+    <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">AI</span></a>
+    <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">MACHINE LEARNING</span></a>
+    <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">PROGRAMMING</span></a>
+    <a href="/?s=technology"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">ADSENSE</span></a>
     </p>
     </div>
   </div>
@@ -459,11 +459,6 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
   <p class="w3-text-white w3-large">${req.headers.host.split(".")[0].toUpperCase()}</p>
 </footer>
 </body>
-<script>
-document.querySelectorAll(".w3-tag").forEach(function(x) {
-x.addEventListener("click",function() {location.href="#"+x.innerHTML})
-})
-</script>
 </html>`;
 res.setHeader("content-type","text/html");
 res.end(result);
