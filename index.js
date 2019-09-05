@@ -53,6 +53,7 @@ res.end(result);
 
 app.get("/*", function(req,res) {
 var phrase = [];
+axios.get("https://typi.tk/?url=https://m.wikihow-fun.com/Special:Randomizer&sel=.step&attribs=classs&static=true").then(function(content) {
 axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.s || ['technology','universe','AI','Machine Learning','Programming','adsense'][Math.floor(6*Math.random())])+"&page=1").then(function(x) {
 $("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
 var extra = 
@@ -218,7 +219,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[0]}">${phrase[0]}</a></b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+      <h5>${faker.name.firstName()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
       <p>${phrase[0]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
@@ -236,7 +237,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
   <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Norway" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[1]}">${phrase[1]}</a></b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 2, 2019</span></h5>
+      <h5>${faker.name.firstName()}, <span class="w3-opacity">April 2, 2019</span></h5>
     </div>
     <div class="w3-container">
       <p>${phrase[1]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
@@ -254,7 +255,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[2]}">${phrase[2]}</a></b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+      <h5>${faker.name.firstName()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
       <p>${phrase[2]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
@@ -272,7 +273,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[3]}">${phrase[3]}</a></b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+      <h5>${faker.name.firstName()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
       <p>${phrase[3]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
@@ -290,7 +291,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[4]}">${phrase[4]}</a></b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+      <h5>${faker.name.firstName()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
       <p>${phrase[4]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
@@ -308,7 +309,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[5]}">${phrase[5]}</a></b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+      <h5>${faker.name.firstName()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
       <p>${phrase[5]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
@@ -326,7 +327,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[6]}">${phrase[6]}</a></b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+      <h5>${faker.name.firstName()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
       <p>${phrase[6]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
@@ -344,7 +345,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[7]}">${phrase[7]}</a></b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+      <h5>${faker.name.firstName()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
       <p>${phrase[7]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
@@ -362,7 +363,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[8]}">${phrase[8]}</a></b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+      <h5>${faker.name.firstName()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
       <p>${phrase[8]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
@@ -380,7 +381,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b><a href="/${phrase[9]}">${phrase[9]}</a></b></h3>
-      <h5>${faker.random.words()}, <span class="w3-opacity">April 7, 2019</span></h5>
+      <h5>${faker.name.firstName()}, <span class="w3-opacity">April 7, 2019</span></h5>
     </div>
     <div class="w3-container">
       <p>${phrase[9]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming"}</p>
@@ -488,6 +489,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
 </html>`;
 res.setHeader("content-type","text/html");
 res.end(result);
+})
 })
 })
 
