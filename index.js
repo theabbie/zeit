@@ -157,7 +157,33 @@ var result =
          "datePublished":"${new Date().toISOString()}",
          "dateModified":"${new Date().toISOString()}",
          "description":"${req.headers.host.split(".")[0].toUpperCase()} official is a blog about modern interests, sciences, AI, and Machine learning"
-      }
+      },
+     {
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://${req.headers.host+req.url}"
+  },
+  "headline": "${decodeURIComponent(req.url.substring(1))}",
+  "image": [
+    "https://${req.headers.host}/logo"
+   ],
+  "datePublished": "${new Date().toISOString()}",
+  "dateModified": "${new Date().toISOString()}",
+  "author": {
+    "@type": "Person",
+    "name": "Abhishek chaudhary"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "${req.headers.host.split(".")[0]}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://${req.headers.host}/logo"
+    }
+  },
+  "description": "${decodeURIComponent(req.url.substring(1))}"
+}
    ]
 }
 </script>
