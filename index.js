@@ -60,7 +60,7 @@ var content = []
 for (i=0; i<9; i++) {content[i]=(contents.data[i] || {text: ""})}
 var extra = 
 `<img src="https://source.unsplash.com/800x450/?hacker" alt="Norway" style="width:100%">
-<h4 class="w3-container w3-padding-32">${content[0].text.split("WH").splice(-1,1).join("")}</h4>
+<h4 class="w3-container w3-padding-32">${content[0].text.split("WH").shift()}</h4>
 <h4 class="w3-container w3-padding-32">${content[1].text+" "+content[2].text}</h4>
 <img src="https://source.unsplash.com/800x450/?coding" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${content[3].text+" "+content[4].text}</h4>
