@@ -210,7 +210,7 @@ a {text-decoration: none;}
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
   <h1><b><a href="https://${req.headers.host}">${req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</a></b></h1>
-  <p>Welcome to the blog of <span class="w3-tag"><a href="https://github.com/theabbie">Abhishek</a></span></p>
+  <p>The Blog of <span class="w3-tag"><a href="https://github.com/theabbie">Abhishek</a></span></p>
 </header>
 ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)}
 <center><form action="https://${req.headers.host}"><input name="s" type="text" class="search w3-card w3-input w3-border w3-round-large w3-margin" style="width:75%;" Placeholder="Search"></form></center>
@@ -325,8 +325,8 @@ return rs;
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="https://${req.headers.host}/">Next &raquo;</a></button>
-  <p class="w3-text-white w3-large">${req.headers.host.split(".")[0].toUpperCase()} official</p><br>
-  <a href="https://${req.headers.host}/sitemap">Sitemap</a>
+  <p class="w3-text-white w3-large">${req.headers.host.split(".")[0].toUpperCase()} official</p>
+  <a class="w3-text-white w3-large" href="https://${req.headers.host}/sitemap">Sitemap</a>
 </footer>
 </body>
 </html>`;
