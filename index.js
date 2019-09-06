@@ -455,7 +455,7 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     <p>
     ${(function() {
     var rs = ``;
-    topics.forEach(function(x) {rs+=`<a href="/?s=${x}"><span class="w3-tag w3-light-grey w3-margin-bottom">${x.toUpperCase()}</span></a>`})
+    topics.forEach(function(x) {rs+=`<a href="/?s=${x}"><span class="w3-tag w3-light-grey w3-margin-bottom">${x.toUpperCase()}</span></a>&nbsp;`})
     return rs;
     })()}
     <!--<a href="/?s=technology"><span class="w3-tag w3-light-grey w3-margin-bottom">TECHNOLOGY</span></a>
