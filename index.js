@@ -8,17 +8,20 @@ var db = new store({path: '/tmp/data.json'});
 app.get("/logo", function(req,res) {res.redirect(301,"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg")});
 
 app.get("/sitemap*", function(req,res) {
-axios("https://hl-upfbwr4pp09a.runkit.sh/").then(function(x) {
-x.data.reverse();
-x.data.push("");
-x.data.reverse();
+axios.all([
+    axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3Dtechnology%26page%3D1&sel=td:nth-child(2)&attribs=class&static=true'),
+    axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3Dtechnology%26page%3D2&sel=td:nth-child(2)&attribs=class&static=true'),
+    axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3Dtechnology%26page%3D3&sel=td:nth-child(2)&attribs=class&static=true')
+  ])
+  .then(axios.spread((one, two, three) => {
+var hls = [...[""],...one.data.map(x => x.text),...two.data.map(y => y.text),...three.data.map(z => z.text)]
 var result =
 `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 `;
-for (i=0; i<x.data.length; i++) {result+=
+for (i=0; i<hls.length; i++) {result+=
 `<url>
-<loc>https://${req.headers.host}/${x.data[i].split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;").trim()}</loc>
+<loc>https://${req.headers.host}/${hls[i].split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;").trim()}</loc>
 <image:image>
 <image:loc>
 https://source.unsplash.com/800x450/?${faker.random.words().split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;").trim().split(" ").join(",").split("-").join(",")}
@@ -41,7 +44,7 @@ https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg
 </image:image>
 <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
 <changefreq>daily</changefreq>
-<priority>1</priority>
+<priority>0.75</priority>
 </url>
 `
 }
