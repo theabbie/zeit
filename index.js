@@ -55,10 +55,9 @@ res.type("application/xml").end(result);
 })
 
 app.get("/*", function(req,res) {
-var phrase = [];
 axios.get("https://typi.tk/?url=https://m.wikihow-fun.com/Special:Randomizer&sel=.step&attribs=classs&static=true").then(function(contents) {
-axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.s?(topics.includes(req.query.s.toLowerCase())?req.query.s:topics[Math.floor((topics.length)*Math.random())]):topics[Math.floor((topics.length)*Math.random())])+"&page=1").then(function(x) {
-$("td:nth-child(2)",x.data).contents().each(function(i,x) {phrase.push($(this).text())})
+axios.get("https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3D"+(req.query.s?(topics.includes(req.query.s.toLowerCase())?req.query.s:topics[Math.floor((topics.length)*Math.random())]):topics[Math.floor((topics.length)*Math.random())])+"%26page%3D1&sel=td:nth-child(2)&attribs=classss&static=true").then(function(x) {
+var phrase = x.map(p => p.text);
 var content = []
 for (i=0; i<9; i++) {content[i]=(contents.data[i] || {text: ""})}
 var extra = 
