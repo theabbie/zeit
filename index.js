@@ -50,7 +50,7 @@ https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg
 }
 result+=`</urlset>`
 res.type("application/xml").end(result);
-})
+}))
 })
 
 app.get("/*", function(req,res) {
