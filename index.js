@@ -4,14 +4,15 @@ var faker = require('faker');
 var store = require('data-store');
 const $ = require("cheerio");
 var db = new store({path: '/tmp/data.json'});
+var topics = ['technology','universe','ai','machine learning','programming','adsense','seo'];
 
 app.get("/logo", function(req,res) {res.redirect(301,"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg")});
 
 app.get("/sitemap*", function(req,res) {
 axios.all([
-    axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3Dtechnology%26page%3D1&sel=td:nth-child(2)&attribs=class&static=true'),
-    axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3Dtechnology%26page%3D2&sel=td:nth-child(2)&attribs=class&static=true'),
-    axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3Dtechnology%26page%3D3&sel=td:nth-child(2)&attribs=class&static=true')
+    axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3D'+(req.query.s || topics[Math.floor((topics.length)*Math.random())])+'%26page%3D1&sel=td:nth-child(2)&attribs=class&static=true'),
+    axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3D'+(req.query.s || topics[Math.floor((topics.length)*Math.random())])+'%26page%3D2&sel=td:nth-child(2)&attribs=class&static=true'),
+    axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3D'+(req.query.s || topics[Math.floor((topics.length)*Math.random())])+'%26page%3D3&sel=td:nth-child(2)&attribs=class&static=true')
   ])
   .then(axios.spread((one, two, three) => {
 var hls = [...[""],...one.data.map(x => x.text),...two.data.map(y => y.text),...three.data.map(z => z.text)]
@@ -54,7 +55,6 @@ res.type("application/xml").end(result);
 })
 
 app.get("/*", function(req,res) {
-var topics = ['technology','universe','ai','machine learning','programming','adsense','seo'];
 var phrase = [];
 axios.get("https://typi.tk/?url=https://m.wikihow-fun.com/Special:Randomizer&sel=.step&attribs=classs&static=true").then(function(contents) {
 axios.get("https://www.title-generator.com/best-online-title-generator.html?qs="+(req.query.s?(topics.includes(req.query.s.toLowerCase())?req.query.s:topics[Math.floor((topics.length)*Math.random())]):topics[Math.floor((topics.length)*Math.random())])+"&page=1").then(function(x) {
