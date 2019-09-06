@@ -6,7 +6,7 @@ const $ = require("cheerio");
 var db = new store({path: '/tmp/data.json'});
 var topics = ['technology','universe','ai','machine learning','programming','adsense','seo'];
 
-app.get("/logo", function(req,res) {res.redirect(301,"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg")});
+app.get("/logo", function(req,res) {res.redirect(301,"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg");});
 
 app.get("/sitemap*", function(req,res) {
 axios.all([
