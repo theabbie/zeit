@@ -326,7 +326,8 @@ return rs;
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="https://${req.headers.host}/">Next &raquo;</a></button>
-  <p class="w3-text-white w3-large">${req.headers.host.split(".")[0].toUpperCase()}</p>
+  <p class="w3-text-white w3-large">${req.headers.host.split(".")[0].toUpperCase()} official</p><br>
+  <a href="https://${req.headers.host}/sitemap">Sitemap</a>
 </footer>
 </body>
 </html>`;
