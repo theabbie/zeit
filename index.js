@@ -458,13 +458,6 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
     topics.forEach(function(x) {rs+=`<a href="/?s=${x}"><span class="w3-tag w3-light-grey w3-margin-bottom">${x.toUpperCase()}</span></a>\n`})
     return rs;
     })()}
-    <!--<a href="/?s=technology"><span class="w3-tag w3-light-grey w3-margin-bottom">TECHNOLOGY</span></a>
-    <a href="/?s=universe"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">UNIVERSE</span></a>
-    <a href="/?s=AI"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">AI</span></a>
-    <a href="/?s=Machine Learning"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">MACHINE LEARNING</span></a>
-    <a href="/?s=Programming"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">PROGRAMMING</span></a>
-    <a href="/?s=Adsense"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">ADSENSE</span></a>
-    <a href="/?s=seo"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">SEO</span></a>-->
     </p>
     </div>
   </div>
