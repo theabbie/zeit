@@ -229,7 +229,7 @@ rs+=
       <h5>${faker.name.firstName()}, <span class="w3-opacity">${faker.date.past().toString().split(" ").splice(0,4).join(" ")}</span></h5>
     </div>
     <div class="w3-container">
-      <p>${phrase[i]+"<br>#AI #Machine Learning <br> #Universe #Technology <br> #Adsense #Programming <br> #SEO"}</p>
+      <p>${phrase[i]+"<br>#AI #Machine Learning #Universe<br> #Technology #Adsense #Programming <br> #SEO"}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
