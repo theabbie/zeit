@@ -5,6 +5,7 @@ var store = require('data-store');
 const $ = require("cheerio");
 var db = new store({path: '/tmp/data.json'});
 var topics = ['technology','universe','ai','machine learning','programming','adsense','seo','database','cloud'];
+var tags = "<br>#AI #Machine Learning #Universe<br> #Technology #Adsense #Programming<br> #SEO #database #cloud";
 
 app.get("/logo", function(req,res) {res.redirect(301,"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg")});
 
@@ -195,7 +196,7 @@ var result =
 }
 </script>
 <meta name="google-site-verification" content="esWdvsZT7Pj4JUmY9NRbjNri9UawGrXbDGBcDgcK3Uo" />
-<meta name="description" content="${req.url=="/"?req.headers.host.split(".")[0].toUpperCase()+" official":decodeURIComponent(req.url.substring(1))}">
+<meta name="description" content="${req.url=="/"?req.headers.host.split(".")[0].toUpperCase()+" official is a blog about modern interests, sciences, AI, and Machine learning":(decodeURIComponent(req.url.substring(1))+content[0].text.split(" ").slice(0,21).join(" ")+tags.split("<br>").join(""))}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/Adobe_Post_20190830_210419.png">
 <title>${req.query.s?("Search results for "+req.query.s):(req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1)))}</title>
@@ -232,7 +233,7 @@ rs+=
       <h5>${faker.name.firstName()}, <span class="w3-opacity">${faker.date.past().toString().split(" ").splice(0,4).join(" ")}</span></h5>
     </div>
     <div class="w3-container">
-      <p>${phrase[i]+"<br>#AI #Machine Learning #Universe<br> #Technology #Adsense #Programming <br> #SEO #database #cloud"}</p>
+      <p>${phrase[i]+tags}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
