@@ -4,7 +4,7 @@ var faker = require('faker');
 var store = require('data-store');
 const $ = require("cheerio");
 var db = new store({path: '/tmp/data.json'});
-var topics = ['technology','universe','ai','machine learning','programming','adsense','seo'];
+var topics = ['technology','universe','ai','machine learning','programming','adsense','seo','database','cloud'];
 
 app.get("/logo", function(req,res) {res.redirect(301,"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg")});
 
@@ -232,7 +232,7 @@ rs+=
       <h5>${faker.name.firstName()}, <span class="w3-opacity">${faker.date.past().toString().split(" ").splice(0,4).join(" ")}</span></h5>
     </div>
     <div class="w3-container">
-      <p>${phrase[i]+"<br>#AI #Machine Learning #Universe<br> #Technology #Adsense #Programming <br> #SEO"}</p>
+      <p>${phrase[i]+"<br>#AI #Machine Learning #Universe<br> #Technology #Adsense #Programming <br> #SEO #database #cloud}</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
