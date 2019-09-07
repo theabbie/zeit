@@ -229,7 +229,7 @@ rs+=
 `<div class="w3-card-4 w3-margin w3-white">
     <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b><a href="/${phrase[i]}">${phrase[i]}</a></b></h3>
+      <h3><b><a href="/${phrase[i].trim()}">${phrase[i]}</a></b></h3>
       <h5>${faker.name.firstName()}, <span class="w3-opacity">${faker.date.past().toString().split(" ").splice(0,4).join(" ")}</span></h5>
     </div>
     <div class="w3-container">
@@ -265,25 +265,25 @@ return rs;
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
-        <a href="/${phrase[10]}">
+        <a href="/${phrase[10].trim()}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[10]}</span><br>
         </a>
       </li>
       <li class="w3-padding-16">
-       <a href="/${phrase[11]}">
+       <a href="/${phrase[11].trim()}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[11]}</span><br>
         </a>
       </li> 
       <li class="w3-padding-16">
-      <a href="/${phrase[12]}">
+      <a href="/${phrase[12].trim()}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[12]}</span><br>
         </a>
       </li>   
       <li class="w3-padding-16">
-      <a href="/${phrase[13]}">
+      <a href="/${phrase[13].trim()}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">${phrase[13]}</span><br>
         </a>
