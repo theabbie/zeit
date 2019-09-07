@@ -217,7 +217,7 @@ a {text-decoration: none;}
   <p>The Blog of <span class="w3-tag"><a href="https://github.com/theabbie">Abhishek</a></span></p>
 </header>
 ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)}
-<center><form action="https://${req.headers.host}"><input name="s" type="text" class="search w3-card w3-input w3-border w3-round-large w3-margin" style="width:75%;" Placeholder="Search"></form></center>
+<center><form action="https://${req.headers.host}"><input name="s" type="text" class="search w3-card w3-input w3-border w3-round-large" style="width:75%;" Placeholder="Search"></form></center>
 <h3 class="w3-container w3-padding-32">${req.query.s?((topics.includes(req.query.s.toLowerCase())?"Search":"No")+" results for "+req.query.s.bold()):""}</h3>
 <div class="w3-row">
 <div class="w3-col l8 s12">
