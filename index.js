@@ -196,7 +196,7 @@ var result =
 }
 </script>
 <meta name="google-site-verification" content="esWdvsZT7Pj4JUmY9NRbjNri9UawGrXbDGBcDgcK3Uo" />
-<meta name="description" content="${req.url=="/"?req.headers.host.split(".")[0].toUpperCase()+" official is a blog about modern interests, sciences, AI, and Machine learning":(decodeURIComponent(req.url.substring(1))+content[0].text.split(" ").slice(0,21).join(" ")+tags.split("<br>").join(""))}">
+<meta name="description" content="${req.url=="/"?req.headers.host.split(".")[0].toUpperCase()+" official is a blog about modern interests, sciences, AI, and Machine learning":(decodeURIComponent(req.url.substring(1))+"\n"+content[1].text.split(" ").slice(0,21).join(" ")+"...\n"+tags.split("<br>").join(""))}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/Adobe_Post_20190830_210419.png">
 <title>${req.query.s?("Search results for "+req.query.s):(req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1)))}</title>
