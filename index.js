@@ -277,25 +277,25 @@ return rs;
       <li class="w3-padding-16">
         <a href="/${phrase[10].trim()}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${phrase[10]+"<br>"+faker.name.firstName()}</span><br>
+        <span class="w3-large">${phrase[10].split(" ").splice(0,5).join(" ")+"<br>"+faker.name.firstName().bold()}</span><br>
         </a>
       </li>
       <li class="w3-padding-16">
        <a href="/${phrase[11].trim()}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${phrase[11]+"<br>"+faker.name.firstName()}</span><br>
+        <span class="w3-large">${phrase[11].split(" ").splice(0,5).join(" ")+"<br>"+faker.name.firstName().bold()}</span><br>
         </a>
       </li> 
       <li class="w3-padding-16">
       <a href="/${phrase[12].trim()}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${phrase[12]+"<br>"+faker.name.firstName()}</span><br>
+        <span class="w3-large">${phrase[12].split(" ").splice(0,5).join(" ")+"<br>"+faker.name.firstName().bold}</span><br>
         </a>
       </li>   
       <li class="w3-padding-16">
       <a href="/${phrase[13].trim()}">
         <img src="${faker.image.avatar()}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">${phrase[13]+"<br>"+faker.name.firstName()}</span><br>
+        <span class="w3-large">${phrase[13].split(" ").splice(0,5).join(" ")+"<br>"+faker.name.firstName().bold()}</span><br>
         </a>
       </li>  
     </ul>
