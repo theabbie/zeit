@@ -83,6 +83,12 @@ var extra =
 <h4 class="w3-container w3-padding-32">${content[5].text+" "+content[6].text}</h4>
 <img src="https://source.unsplash.com/800x450/?network" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${content[7].text+" "+content[8].text}</h4>
+<h4 class="w3-container w3-padding-32">
+Further reading:<br>
+<u><a href="/${phrase[14].trim()}">${phrase[14]}</a></u><br>
+<u><a href="/${phrase[15].trim()}">${phrase[15]}</a></u><br>
+<u><a href="/${phrase[16].trim()}">${phrase[16]}</a></u>
+</h4>
 <h3 class="w3-container w3-padding-32">Also see:</h3>
 `
 if(!db.has(decodeURIComponent(req.url.substring(1)))) {db.set(decodeURIComponent(req.url.substring(1)),extra)}
