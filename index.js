@@ -199,7 +199,19 @@ var result =
     }
   },
   "description": "${decodeURIComponent(req.url.substring(1))}"
-}
+},
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Articles",
+    "item": "https://${req.headers.host}"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "${decodeURIComponent(req.url.substring(1))}",
+    "item": "https://${req.headers.host+req.url}"
+  }]
    ]
 }
 </script>
