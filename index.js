@@ -213,8 +213,8 @@ var result =
     "name": "${decodeURIComponent(req.url.substring(1))}",
     "item": "https://${req.headers.host+req.url}"
   }]
-   ]
-}
+  }
+ ]
 }
 </script>
 <meta name="google-site-verification" content="esWdvsZT7Pj4JUmY9NRbjNri9UawGrXbDGBcDgcK3Uo" />
