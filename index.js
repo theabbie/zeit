@@ -224,7 +224,7 @@ a {background-color: transparent; -webkit-touch-callout: none; -webkit-user-sele
 <div class="w3-content" style="max-width:1400px">
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
-  <h1><b><a href="https://google.com/search?q=${decodeURIComponent(req.url.substring(1))}">${req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</a></b></h1>
+  <h1><b>${req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1))}</b></h1>
   <p>The Blog of <span class="w3-tag"><a href="https://github.com/theabbie">Abhishek</a></span></p>
 </header>
 ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)}
@@ -344,6 +344,9 @@ return rs;
   <a class="w3-text-white w3-large" href="https://${req.headers.host}/sitemap">Sitemap</a>
 </footer>
 </body>
+<script>
+document.querySelector("header").onclick=function() {location.href="https://google.com/search?q=${decodeURIComponent(req.url.substring(1))}"}
+</script>
 </html>`;
 res.type("text/html").end(result);
 }))
