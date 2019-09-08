@@ -83,7 +83,7 @@ var extra =
 <h4 class="w3-container w3-padding-32">${content[5].text+" "+content[6].text}</h4>
 <img src="https://source.unsplash.com/800x450/?network" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${content[7].text+" "+content[8].text}</h4>
-<h4 class="w3-container w3-padding-32">
+<h4 class="w3-container">
 <b>Further reading:</b><br>
 <ul>
 <li><u><a href="/${phrase[14].trim()}">${phrase[14]}</a></u><br></li>
