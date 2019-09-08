@@ -217,7 +217,8 @@ var result =
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 div, img {border-radius: 6px;}
 a {text-decoration: none;}
-h4 {word-break: break-all}
+h4 {word-break: break-all; -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; hyphens: auto;}
+a:active {background-color: transparent;}
 </style>
 </head>
 <body class="w3-light-grey">
