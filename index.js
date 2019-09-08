@@ -217,7 +217,6 @@ var result =
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 div, img {border-radius: 6px;}
 a {text-decoration: none;}
-h4 {word-break: break-all;}
 a {background-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
 </style>
 </head>
