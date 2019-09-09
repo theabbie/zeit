@@ -71,7 +71,6 @@ var extra =
 <h4 class="w3-container w3-padding-32">${content[1].text+" "+content[2].text}</h4>
 <img src="https://source.unsplash.com/800x450/?coding" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${content[3].text+" "+content[4].text}</h4>
-<b>Advertisement</b><br>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
@@ -333,8 +332,7 @@ return rs;
     </div>
   </div>
 <!-- AD -->
-<div class="w3-card w3-margin">
-<center><h3>AD</h3></center>
+<div class="w3-margin">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- paige -->
 <ins class="adsbygoogle"
