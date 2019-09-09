@@ -333,6 +333,17 @@ return rs;
     </p>
     </div>
   </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- iferr.long.ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2455012527087318"
+     data-ad-slot="9210633276"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- END Introduction Menu -->
 </div>
 <!-- END GRID -->
