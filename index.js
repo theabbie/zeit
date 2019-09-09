@@ -4,8 +4,8 @@ var faker = require('faker');
 var store = require('data-store');
 const $ = require("cheerio");
 var db = new store({path: '/tmp/data.json'});
-var topics = ['technology','universe','ai','machine learning','programming','adsense','seo','database','cloud'];
-var tags = "<br>#AI #Machine Learning #Universe<br> #Technology #Adsense #Programming<br> #SEO #database #cloud";
+var topics = ['technology','universe','ai','machine learning','programming','adsense','seo','database','cloud','youtube'];
+var tags = "<br>#AI #Machine Learning #Universe<br> #Technology #Adsense #Programming<br> #SEO #database #cloud<br> #youtube";
 
 app.get("/logo", function(req,res) {res.redirect(301,"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg")});
 
