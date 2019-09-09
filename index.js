@@ -9,6 +9,8 @@ var tags = "<br>#AI #Machine Learning #Universe<br> #Technology #Adsense #Progra
 
 app.get("/logo", function(req,res) {res.redirect(301,"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg")});
 
+app.get("/search", function(req,res) {res.redirect(301,"https://cse.google.com/cse?cx=005734029147097694460:pinnzt79h3w")});
+
 app.get("/ads.txt", function(req,res) {res.type("text/plain").end("google.com, pub-2455012527087318, DIRECT, f08c47fec0942fa0")});
 
 app.get("/sitemap*", function(req,res) {
