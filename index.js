@@ -9,6 +9,8 @@ var tags = "<br>#AI #Machine Learning #Universe<br> #Technology #Adsense #Progra
 
 app.get("/logo", function(req,res) {res.redirect(301,"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg")});
 
+app.get("/ads.txt", function(req,res) {res.type("text/plain").end("google.com, pub-2455012527087318, DIRECT, f08c47fec0942fa0")});
+
 app.get("/sitemap*", function(req,res) {
 axios.all([
     axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3D'+(req.query.s || topics[Math.floor((topics.length)*Math.random())])+'%26page%3D1&sel=td:nth-child(2)&attribs=class&static=true'),
