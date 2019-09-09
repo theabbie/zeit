@@ -73,6 +73,16 @@ var extra =
 <h4 class="w3-container w3-padding-32">${content[1].text+" "+content[2].text}</h4>
 <img src="https://source.unsplash.com/800x450/?coding" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${content[3].text+" "+content[4].text}</h4>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2455012527087318"
+     data-ad-slot="7546197812"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <h4 class="w3-container w3-padding-32">${content[5].text+" "+content[6].text}</h4>
 <img src="https://source.unsplash.com/800x450/?network" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${content[7].text+" "+content[8].text}</h4>
