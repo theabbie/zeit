@@ -252,7 +252,7 @@ var rs = ``;
 for (i=0; i<10; i++) {
 rs+=
 `<div class="w3-card-4 w3-margin w3-white">
-    <img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">
+    ${i==0?``:`<img src="https://source.unsplash.com/800x450/?${faker.random.words().split(" ").join(",").split("-").join(",")}" alt="Nature" style="width:100%">`}
     <div class="w3-container">
       <h3><b><a href="/${phrase[i].trim()}">${phrase[i]}</a></b></h3>
       <h5>${faker.name.firstName()}, <span class="w3-opacity">${faker.date.past().toString().split(" ").splice(0,4).join(" ")}</span></h5>
