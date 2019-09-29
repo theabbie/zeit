@@ -17,10 +17,9 @@ app.get("/sitemap*", function(req,res) {
 axios.all([
     axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3D'+(req.query.s || topics[Math.floor((topics.length)*Math.random())])+'%26page%3D1&sel=td:nth-child(2)&attribs=class&static=true'),
     axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3D'+(req.query.s || topics[Math.floor((topics.length)*Math.random())])+'%26page%3D2&sel=td:nth-child(2)&attribs=class&static=true'),
-    axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3D'+(req.query.s || topics[Math.floor((topics.length)*Math.random())])+'%26page%3D3&sel=td:nth-child(2)&attribs=class&static=true'),
-    axios.get('https://thedb.now.sh/refer?append='+req.headers.referer+'%0A')
+    axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3D'+(req.query.s || topics[Math.floor((topics.length)*Math.random())])+'%26page%3D3&sel=td:nth-child(2)&attribs=class&static=true')
   ])
-  .then(axios.spread((one, two, three, four) => {
+  .then(axios.spread((one, two, three) => {
 var hls = [...[""],...one.data.map(x => x.text),...two.data.map(y => y.text),...three.data.map(z => z.text)]
 var result =
 `<?xml version="1.0" encoding="UTF-8"?>
@@ -1540,7 +1539,7 @@ return rs;
 </body>
 <script>
 document.querySelector("header").onclick=function() {location.href="https://google.com/search?q=${decodeURIComponent(req.url.substring(1))}"}
-fetch("https://ipapi.co/json/").then(x=>x.json()).then(function(res) {fetch("https://thedb.now.sh/tracking.csv?append="+[...[window.location.href],...Object.values(res).splice(0,15),...Object.values(res).splice(16,17)].map(x=>'"'+x+'"').join(",")+"%0A")})
+fetch("https://ipapi.co/json/").then(x=>x.json()).then(function(res) {fetch("https://thedb.now.sh/tracking.csv?append="+[...[window.location.href],...Object.values(res).splice(0,15),...Object.values(res).splice(16,17),...[document.referrer]].map(x=>'"'+x+'"').join(",")+"%0A")})
 </script>
 </html>`;
 res.type("text/html").end(result);
