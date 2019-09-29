@@ -1536,20 +1536,6 @@ return rs;
   <p class="w3-text-white w3-large"><a href="/">${req.headers.host.split(".")[0].toUpperCase()} official</a></p>
   <a class="w3-text-white w3-large" href="https://${req.headers.host}/sitemap">Sitemap</a>
 </footer>
-<!-- Default Statcounter code for iferr https://iferr.now.sh -->
-<script type="text/javascript">
-var sc_project=12098508; 
-var sc_invisible=1; 
-var sc_security="4e3440f4"; 
-var sc_https=1; 
-var sc_remove_link=1; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><img class="statcounter"
-src="https://c.statcounter.com/12098508/0/4e3440f4/1/" alt="Web
-Analytics"></div></noscript>
-<!-- End of Statcounter Code -->
 </body>
 <script>
 document.querySelector("header").onclick=function() {location.href="https://google.com/search?q=${decodeURIComponent(req.url.substring(1))}"}
