@@ -7,7 +7,7 @@ var db = new store({path: '/tmp/data.json'});
 var topics = ['technology','universe','ai','machine learning','programming','adsense','seo','database','cloud','youtube','wikipedia','paradox','fcrit'];
 var tags = "<br>#AI #Machine Learning #Universe #Technology<br> #Adsense #Programming #SEO #database<br> #cloud #youtube #wikipedia #fcrit<br> #paradox";
 
-app.get("/logo", function(req,res) {res.redirect(301,"https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg")});
+app.get("/logo", function(req,res) {res.redirect(301,"https://raw.githubusercontent.com/theabbie/theabbie.github.io/master/files/theabbie.png")});
 
 app.get("/search", function(req,res) {res.redirect(301,"https://cse.google.com/cse?cx=005734029147097694460:pinnzt79h3w")});
 
@@ -45,7 +45,7 @@ https://source.unsplash.com/800x450/?${faker.random.words().split("&").join("&am
 </image:image>
 <image:image>
 <image:loc>
-https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg
+https://raw.githubusercontent.com/theabbie/theabbie.github.io/master/files/theabbie.png
 </image:loc>
 </image:image>
 <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
@@ -1456,7 +1456,7 @@ return rs;
 <div class="w3-col l4">
   <!-- About Card -->
   <div class="w3-card w3-margin w3-margin-top">
-  <img src="https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/IMG_20190720_184556.jpg" style="width:100%">
+  <img src="https://raw.githubusercontent.com/theabbie/theabbie.github.io/master/files/theabbie.png" style="width:100%">
     <div class="w3-container w3-white">
       <h4><b>Abhishek</b></h4>
       <p>Being a developer sometimes feels so amazing because we are instructing non-living machines to do wonderful tasks, 
