@@ -9,7 +9,7 @@ var tags = "<br>#AI #Machine Learning #Universe #Technology<br> #Adsense #Progra
 
 app.get("/logo", function(req,res) {res.redirect(301,"https://raw.githubusercontent.com/theabbie/theabbie.github.io/master/files/theabbie.png")});
 
-app.get("/search", function(req,res) {res.redirect(301,"https://cse.google.com/cse?cx=005734029147097694460:pinnzt79h3w")});
+app.get("/search", function(req,res) {res.redirect(301,"https://cse.google.com/cse?cx=partner-pub-2455012527087318:7707700480#gsc.tab=0")});
 
 app.get("/ads.txt", function(req,res) {res.type("text/plain").end("google.com, pub-2455012527087318, DIRECT, f08c47fec0942fa0")});
 
