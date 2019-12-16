@@ -4,8 +4,8 @@ var faker = require('faker');
 var store = require('data-store');
 const $ = require("cheerio");
 var db = new store({path: '/tmp/data.json'});
-var topics = ['technology','universe','ai','machine learning','programming','adsense','seo','database','cloud','youtube','wikipedia','paradox','fcrit'];
-var tags = "<br>#AI #Machine Learning #Universe #Technology<br> #Adsense #Programming #SEO #database<br> #cloud #youtube #wikipedia #fcrit<br> #paradox";
+var topics = ['technology','universe','ai','google','machine learning','programming','adsense','seo','database','cloud','youtube','wikipedia','paradox','fcrit'];
+var tags = "<br>#AI #Machine Learning #Universe #Technology<br> #Adsense #Programming #SEO #database<br> #cloud #youtube #wikipedia #fcrit<br> #paradox #google";
 
 app.get("/logo", function(req,res) {res.redirect(301,"https://raw.githubusercontent.com/theabbie/theabbie.github.io/master/files/theabbie.png")});
 
