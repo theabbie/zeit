@@ -66,7 +66,7 @@ axios.all([
     axios.get('https://typi.tk/?url=https%3A%2F%2Fwww.title-generator.com%2Findex.php%2Fbest-online-title-generator.html%3Fqs%3D'+(req.query.s || topics[Math.floor((topics.length)*Math.random())])+'%26page%3D3&sel=td:nth-child(2)&attribs=class&static=true')
   ])
   .then(axios.spread((one, two, three) => {
-var hls = [...[""],...one.data.map(x => x.text),...two.data.map(y => y.text),...three.data.map(z => z.text)]
+var hls = [...one.data.map(x => x.text),...two.data.map(y => y.text),...three.data.map(z => z.text)]
 var result =
 `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
