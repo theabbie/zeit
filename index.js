@@ -73,7 +73,7 @@ var result =
 <channel>
 <title>${req.headers.host.split(".")[0].toUpperCase()}</title>
 <link>https://${req.headers.host}/</link>
-<description>req.headers.host.split(".")[0].toUpperCase()+" official is a blog about modern interests, sciences, AI, and Machine learning"</description>
+<description>${req.headers.host.split(".")[0].toUpperCase()+" official is a blog about modern interests, sciences, AI, and Machine learning"}</description>
 `;
 for (i=0; i<hls.length; i++) {result+=
 `<item>
@@ -159,9 +159,9 @@ var result =
          "sameAs":[
             "https://www.facebook.com/abhishek.vice.versa",
             "https://instagram.com/sasta_abbie",
-            "https://www.linkedin.com/in/abhishek-choudhary-a9a016102/",
-            "https://www.youtube.com/abhishekchaudharyhome",
-            "https://www.pinterest.com/abhishek7gg7",
+            "https://www.linkedin.com/in/theabbie/",
+            "https://www.youtube.com/theabbie",
+            "https://www.pinterest.com/theabbie",
             "https://twitter.com/theabbiee",
             "https://github.com/theabbie"
          ],
