@@ -77,8 +77,8 @@ var result =
 `;
 for (i=0; i<hls.length; i++) {result+=
 `<item>
-  <title>${hls[i].split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;").trim().split(" ").join("%20")}</title>
-  <link>https://${req.headers.host}/${hls[i].split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;").trim()}</link>
+  <title>${hls[i].split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;").trim()}</title>
+  <link>https://${req.headers.host}/${hls[i].split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;").trim().split(" ").join("%20")}</link>
   <description>${hls[i].split("&").join("&amp;").split('"').join("&quot;").split("'").join("&apos;").trim()}</description>
 </item>
 `
