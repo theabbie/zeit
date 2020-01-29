@@ -243,7 +243,7 @@ var result =
   },{
     "@type": "ListItem",
     "position": 2,
-    "name": "${decodeURIComponent(req.url.substring(1))}",
+    "name": "Books",
     "item": "https://${req.headers.host+req.url}"
   }]
   },
