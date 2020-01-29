@@ -442,6 +442,7 @@ var result =
   "name":"NCDC Storm Events Database",
   "description":"Storm Data is provided by the National Weather Service (NWS) and contain statistics on...",
   "url":"https://catalog.data.gov/dataset/ncdc-storm-events-database",
+  "license": "https://theabbie.github.io/tos",
   "sameAs":"https://gis.ncdc.noaa.gov/geoportal/catalog/search/resource/details.page?id=gov.noaa.ncdc:C00510",
   "identifier": ["https://doi.org/10.1000/182",
                  "https://identifiers.org/ark:/12345/fk1234"],
