@@ -1292,15 +1292,6 @@ var result =
   }
 },
 {
-  "@type": "WebSite",
-  "url": "https://www.example.com/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://query.example.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-},
-{
   "@type": "Person",
   "name": "your name",
   "url": "http://www.your-site.com",
