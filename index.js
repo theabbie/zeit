@@ -1483,8 +1483,8 @@ return rs;
       <h4><b>Abhishek</b></h4>
       <p>Being a developer sometimes feels so amazing because we are instructing non-living machines to do wonderful tasks, 
       it is more than an art and few picasso's exist<br>
-      <b><a href="https://github.com/theabbie">https://github.com/theabbie</a></b><br>
-      <b><a href="https://theabbie.github.io">https://theabbie.github.io</a></b>
+      <b><a href="https://github.com/theabbie" rel="me">https://github.com/theabbie</a></b><br>
+      <b><a href="https://theabbie.github.io" rel="me">https://theabbie.github.io</a></b>
       </p>
     </div>
   </div><hr>
