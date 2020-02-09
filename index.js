@@ -1474,6 +1474,26 @@ rs+=
 return rs;
 })()}
 </div>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = "https://${req.headers.host}";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://iferr.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <!-- Introduction menu -->
 <div class="w3-col l4">
   <!-- About Card -->
@@ -1559,6 +1579,7 @@ return rs;
   <p class="w3-text-white w3-large"><a href="/">${req.headers.host.split(".")[0].toUpperCase()} official</a></p>
   <a class="w3-text-white w3-large" href="https://${req.headers.host}/sitemap">Sitemap</a>
 </footer>
+<script id="dsq-count-scr" src="//iferr.disqus.com/count.js" async></script>
 </body>
 <script>
 document.querySelector("header").onclick=function() {location.href="https://google.com/search?q=${decodeURIComponent(req.url.substring(1))}"}
