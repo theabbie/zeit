@@ -116,6 +116,9 @@ var extra =
 <h4 class="w3-container w3-padding-32">${content[5].text+" "+content[6].text}</h4>
 <img src="https://source.unsplash.com/800x450/?network" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${content[7].text+" "+content[8].text}</h4>
+<iframe height="315"
+src="https://www.youtube.com/embed/fIEiZDCrRE8" style="width: 100%;">
+</iframe>
 <h4 class="w3-container">
 <b>Further reading:</b><br>
 <ul>
@@ -1468,13 +1471,13 @@ a {background-color: transparent; -webkit-touch-callout: none; -webkit-user-sele
   <p>The Blog of <span class="w3-tag"><a href="https://github.com/theabbie">Abhishek</a></span></p>
 </header>
 ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1)))?db.get(decodeURIComponent(req.url.substring(1))):extra)}
-<iframe width="420" height="315"
-src="https://www.youtube.com/embed/fIEiZDCrRE8">
-</iframe>
 <center><form action="https://${req.headers.host}"><input name="s" type="text" class="search w3-card w3-input w3-border w3-round-large" style="width:75%;" Placeholder="Search"></form></center>
 <h3 class="w3-container w3-padding-16">${req.query.s?((topics.includes(req.query.s.toLowerCase())?"Search":"No")+" results for "+req.query.s.bold()):""}</h3>
 <div class="w3-row">
 <div class="w3-col l8 s12">
+<iframe height="315"
+src="https://www.youtube.com/embed/fIEiZDCrRE8" style="width: 100%;">
+</iframe>
 ${(function() {
 var rs = ``;
 for (i=0; i<10; i++) {
