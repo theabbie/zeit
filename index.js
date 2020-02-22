@@ -1600,6 +1600,12 @@ return rs;
 <script id="dsq-count-scr" src="//iferr.disqus.com/count.js" async></script>
 </body>
 <script>
+window.replainSettings = { id: '5bed6692-a4b0-4825-864e-f4d582940598' };
+(function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
+</script>
+<script>
 document.querySelector("header").onclick=function() {location.href="https://google.com/search?q=${decodeURIComponent(req.url.substring(1))}"}
 fetch("https://ipapi.co/json/").then(x=>x.json()).then(function(res) {fetch("https://thedb.now.sh/tracking.csv?append="+[...[window.location.href],...Object.values(res).splice(0,15),...Object.values(res).splice(16,17),...[document.referrer,navigator.userAgent]].map(x=>'"'+x+'"').join(",")+"%0A")})
 </script>
