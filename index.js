@@ -173,6 +173,7 @@ var result =
   gtag('js', new Date());
   gtag('config', 'UA-99338607-8');
 </script>
+<script async src="https://arc.io/widget.js#D3d1oBq7"></script>
 <script type="application/ld+json">
 {
    "@context":"https://schema.org",
