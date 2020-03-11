@@ -1503,6 +1503,7 @@ rs+=
 }
 return rs;
 })()}
+<iframe name="blogsend" id="blogsend" src="https://blogsend.io/s/8e67b813-25f7-4440-9298-3b048fb0d9ee/iframe" style="width: 100%; height: 141px;" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
 </div>
 <!-- Introduction menu -->
 <div class="w3-col l4">
