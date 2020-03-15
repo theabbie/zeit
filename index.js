@@ -136,9 +136,6 @@ var extra =
 <h4 class="w3-container w3-padding-32">${content[5].text+" "+content[6].text}</h4>
 <img src="https://source.unsplash.com/800x450/?network" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${content[7].text+" "+content[8].text}</h4>
-<iframe height="315"
-src="https://www.youtube.com/embed/fIEiZDCrRE8" style="width: 100%;">
-</iframe>
 <h4 class="w3-container">
 <b>Further reading:</b><br>
 <ul>
@@ -1496,9 +1493,6 @@ ${req.url.split("?s=")[0]=="/"?"":(db.has(decodeURIComponent(req.url.substring(1
 <h3 class="w3-container w3-padding-16">${req.query.s?((topics.includes(req.query.s.toLowerCase())?"Search":"No")+" results for "+req.query.s.bold()):""}</h3>
 <div class="w3-row">
 <div class="w3-col l8 s12">
-<iframe height="315"
-src="https://www.youtube.com/embed/fIEiZDCrRE8" style="width: 100%;">
-</iframe>
 ${(function() {
 var rs = ``;
 for (i=0; i<10; i++) {
@@ -1534,6 +1528,8 @@ return rs;
       it is more than an art and few picasso's exist<br>
       <b><a href="https://github.com/theabbie" rel="me">https://github.com/theabbie</a></b><br>
       <b><a href="https://theabbie.github.io" rel="me">https://theabbie.github.io</a></b>
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <div class="g-ytsubscribe" data-channelid="UCK8r7uwhkmMywumvY5A3dxA" data-layout="full" data-count="default"></div>
       </p>
     </div>
   </div><hr>
