@@ -21,7 +21,7 @@ var result = `<?xml version="1.0" encoding="UTF-8"?>
 `;
 for (x in topics) {
     result+=`<sitemap>
-      <loc>http://www.example.com/sitemap?s=${topics[x]}</loc>
+      <loc>https://${req.headers.host}/sitemap?s=${topics[x]}</loc>
     </sitemap>
 `
 }
