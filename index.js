@@ -19,6 +19,10 @@ app.get("/allmap", function(req, res) {
 var result = `<?xml version="1.0" encoding="UTF-8"?>
   <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
+result+=`<sitemap>
+      <loc>https://${req.headers.host}/sitemap</loc>
+    </sitemap>
+`
 for (x in topics) {
     result+=`<sitemap>
       <loc>https://${req.headers.host}/sitemap?s=${topics[x]}</loc>
