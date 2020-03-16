@@ -1465,6 +1465,7 @@ var result =
 }
 </script>
 <meta name="google-site-verification" content="esWdvsZT7Pj4JUmY9NRbjNri9UawGrXbDGBcDgcK3Uo" />
+<meta name="pushsdk" content="616edd24e29a5c0bee449228879e164a">
 <meta name="description" content="${req.url=="/"?req.headers.host.split(".")[0].toUpperCase()+" official is a blog about modern interests, sciences, AI, and Machine learning":(decodeURIComponent(req.url.substring(1))+content[1].text.split(" ").slice(0,21).join(" ")+"...\n"+tags.split("<br>").join(""))}">
 <meta name="keywords" content="${topics.join(", ")}" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
