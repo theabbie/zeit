@@ -137,6 +137,8 @@ var extra =
 <img src="https://source.unsplash.com/800x450/?network" alt="Norway" style="width:100%">
 <h4 class="w3-container w3-padding-32">${content[7].text+" "+content[8].text}</h4>
 <h4 class="w3-container">
+<a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="en"></a>
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
 <b>Further reading:</b><br>
 <ul>
 <li><u><a href="/${phrase[14].trim()}">${phrase[14]}</a></u><br></li>
