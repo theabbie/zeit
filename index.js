@@ -275,6 +275,8 @@ var result =
 `<!DOCTYPE html>
 <html>
 <head>
+<script type=”text/javascript”
+src=”api.mywot.com/widgets/ratings.js”></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({
