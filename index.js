@@ -1576,6 +1576,7 @@ src=”api.mywot.com/widgets/ratings.js”></script>
 <meta name="keywords" content="${topics.join(", ")}" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/theabbie/awto@gh-pages/files/Adobe_Post_20190830_210419.png">
+<link rel="alternate" type="application/rss+xml" title="Never miss another update" href="http://iferr.now.sh/rss" />
 <title>${req.query.s?("Search results for "+req.query.s):(req.url.split("?s=")[0]=="/"?req.headers.host.split(".")[0].toUpperCase():decodeURIComponent(req.url.substring(1)))}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
