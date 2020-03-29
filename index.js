@@ -1727,7 +1727,6 @@ var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
 </script>
 <script>
 document.querySelector("header").onclick=function() {location.href="https://google.com/search?q=${decodeURIComponent(req.url.substring(1))}"}
-fetch("https://ipapi.co/json/").then(x=>x.json()).then(function(res) {fetch("https://thedb.now.sh/tracking.csv?append="+[...[window.location.href],...Object.values(res).splice(0,15),...Object.values(res).splice(16,17),...[document.referrer,navigator.userAgent]].map(x=>'"'+x+'"').join(",")+"%0A")})
 </script>
 </html>`;
 res.type("text/html").end(result);
