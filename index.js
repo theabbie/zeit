@@ -293,6 +293,7 @@ src=”api.mywot.com/widgets/ratings.js”></script>
   gtag('config', 'UA-99338607-8');
 </script>
 <script async src="https://arc.io/widget.js#D3d1oBq7"></script>
+<script src="https://cdn.purpleads.io/load.js" id="purpleads-client" data-publisher="14412fff533229ff138068ad7f84d3fb:11a9a3051fb54f720c4045014aa508ff0b08f0653d99e4f6bc15ef1de03cf3929237be4fb41e5f4577ccc34762f31441236764c26b4327c2ffbc48353645c1bc"></script>
 <script type="application/ld+json">
 {
    "@context":"https://schema.org",
