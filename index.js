@@ -1695,6 +1695,17 @@ return rs;
     </p>
     </div>
   </div>
+<div id="zergnet-widget-83227"></div>
+
+<script language="javascript" type="text/javascript">
+	(function() {
+		var zergnet = document.createElement('script');
+		zergnet.type = 'text/javascript'; zergnet.async = true;
+		zergnet.src = (document.location.protocol == "https:" ? "https:" : "http:") + '//www.zergnet.com/zerg.js?id=83227';
+		var znscr = document.getElementsByTagName('script')[0];
+		znscr.parentNode.insertBefore(zergnet, znscr);
+	})();
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- iferr.long.ad -->
 <ins class="adsbygoogle"
